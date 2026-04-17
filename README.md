@@ -1,17 +1,33 @@
 # OLEKSANDR BIELOV
-**Software Engineer** | Remote (EU timezone) | Open to relocation
+**Software Engineer | AI/ML Systems** | Remote (EU timezone) | Open to relocation
 📧 your.email@example.com | 📱 +358 XX XXX XXXX | 💼 [LinkedIn](linkedin.com/in/yourprofile) | 🐙 [GitHub](github.com/yourhandle)
 ---
 ## SUMMARY
-Software Engineer with 10+ years shipping high-scale production services, APIs, and platform infrastructure at Microsoft, Nuvo, and EPAM. At Microsoft, delivered critical Teams recording and transcription features while increasing release cadence by 3x and cutting incidents by 60% through automation. Strong track record building scalable systems using C#/.NET, Java, and cloud platforms.
+Software Engineer with 10+ years shipping high-scale production services, APIs, and platform infrastructure at Microsoft, Nuvo, and EPAM. Increasingly focused on applied AI engineering — recently designed and shipped multiple production AI systems, including end-to-end RAG pipelines for semantic search and intelligent candidate matching. At Microsoft, delivered critical Teams recording and transcription features while increasing release cadence by 3x and cutting incidents by 60% through automation. Strong track record building scalable systems using C#/.NET, Java, Python, and cloud platforms.
 ---
 ## SKILLS
-**Languages & Frameworks:** C# (.NET Core/Framework), Java (Spring Boot, Kafka Streams), SQL  
-**Cloud & DevOps:** Azure Kubernetes Service (AKS), Docker, Azure DevOps, CI/CD automation  
-**Data & Messaging:** Kafka, Cassandra, Redis, MariaDB, MySQL  
+**Languages & Frameworks:** C# (.NET Core/Framework), Java (Spring Boot, Kafka Streams), Python 3.11, SQL  
+**AI/ML:** OpenAI API (GPT o3-mini, gpt-4.1, text-embedding-3-large), Pinecone (vector search), RAG pipelines, LLM rate-limit management, async AI orchestration  
+**Cloud & DevOps:** Azure Kubernetes Service (AKS), Docker, Heroku, Azure DevOps, CI/CD automation  
+**Data & Messaging:** Kafka, Cassandra, Redis, Supabase, MariaDB, MySQL  
 **Practices:** TDD (xUnit, Mockito), microservices, SOLID, Scrum/Kanban
 ---
 ## EXPERIENCE
+### **Freelance — AI Engineer**
+*AI-Powered Professional Matchmaking Platform* · 2025–2026  
+**Tech Stack:** Python 3.11, OpenAI API, Pinecone, Slack Bolt, Supabase, Docker, Heroku
+* **Replaced manual networking with instant Slack matchmaking** — built a bot where users describe their ideal connection in plain language (e.g. founders, investors). A backend reasoning model actively rewrites each query, bridging the gap between conversational requests and structured profile data while enabling built-in multilingual support.
+* **Automated continuous CRM profile enrichment** — engineered an async background pipeline that analyses live LinkedIn activity. This ensures professional matches are based on current actions rather than stale directory data.
+* **Architected model-specific optimization** — implemented a dual-model system routing high-speed conversational queries to lightweight LLMs, while dedicating heavier reasoning models to deep background profile processing.
+---
+*MatchCV — AI-Powered Candidate Search System* · 2025–2026
+**Tech Stack:** Python, FastAPI, GPT-4o, text-embedding-3-large, Pinecone, ClickUp API, Docker, Heroku
+* **Turned raw CVs into a searchable talent database** — built a backend pipeline that automatically extracts text from resumes attached to ClickUp tasks, allowing recruiters to discover candidates via natural language chat instead of manual file review.
+* **Made search understand recruiter intent** — implemented an LLM module that translates plain-language queries (in any language) into multi-angle semantic searches, whilst extracting hard filters like experience range to guarantee rigid criteria are met.
+* **Ensured top candidate visibility via re-ranking** — added an LLM acting as a second-stage judge to score candidates against the original request, catching strong conceptual matches that basic similarity search would bury.
+
+📄 [Full technical detail → AI_ML_PROJECTS.md](AI_ML_PROJECTS.md)
+---
 ### **Microsoft — Software Engineer**
 *Teams Call Recording, Transcription & Captioning* · 2020–2025 
 **Tech Stack:** C#, .NET, Redis, Docker, Azure Kubernetes Service (AKS), Azure DevOps (YAML, Enterprise CI/CD).
