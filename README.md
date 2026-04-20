@@ -1,9 +1,9 @@
 # OLEKSANDR BIELOV
-**Software Engineer | AI/ML Systems** | Remote (EU timezone)
+**Senior Software Engineer | AI/ML Systems** | Remote (EU timezone)
 📧 obielovswe@gmail.com | 🐙 [GitHub](github.com/aleksandrbelov)
 ---
 ## SUMMARY
-Software Engineer with 10+ years shipping high-scale production services, APIs, and platform infrastructure at Microsoft, Nuvo, and EPAM. Increasingly focused on applied AI engineering — recently designed and shipped multiple production AI systems, including end-to-end RAG pipelines for semantic search and intelligent candidate matching. At Microsoft, delivered critical Teams recording and transcription features while increasing release cadence by 3x and cutting incidents by 60% through automation. Strong track record building scalable systems using C#/.NET, Java, Python, and cloud platforms.
+Senior software engineer with 10+ years building distributed services, APIs, and platform automation at Microsoft, Nuvo, and EPAM. Recently shipped production AI systems, including RAG search and candidate-matching workflows. Strong track record with C#/.NET, Java, Python, cloud infrastructure, and CI/CD automation.
 ---
 ## SKILLS
 **Languages & Frameworks:** C# (.NET Core/Framework), Java (Spring Boot, Kafka Streams), Python, FastAPI, Slack Bolt, SQL  
