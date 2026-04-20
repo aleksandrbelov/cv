@@ -54,7 +54,7 @@ const path = require('path');
     path: outputPath,
     format: 'A4',
     printBackground: true,   // needed for dark backgrounds in print
-    margin: { top: '14mm', bottom: '14mm', left: '14mm', right: '14mm' },
+    margin: { top: '10mm', bottom: '10mm', left: '12mm', right: '12mm' },
     preferCSSPageSize: false,
   });
 

@@ -24,38 +24,39 @@
     <div class="bg-noise"></div>
 
     <div class="container">
-        <!-- TOP BENTO GRID -->
-        <div class="bento-grid">
+        <!-- TWO-COLUMN LAYOUT -->
+        <div class="layout-grid">
+            <main class="layout-main">
 
-            <!-- Hero / Profile Bento -->
-            <header class="bento-card bento-hero hover-glow">
-                <div class="hero-content">
-                    <div class="availability-badge">
-                        <span class="pulse-dot"></span> Available for new opportunities
+                <!-- Hero / Profile Bento -->
+                <header class="bento-card bento-hero hover-glow" style="margin-bottom: 1.5rem;">
+                    <div class="hero-content">
+                        <div class="availability-badge">
+                            <span class="pulse-dot"></span> Available for new opportunities
+                        </div>
+                        <h1 class="name">Oleksandr Bielov</h1>
+                        <h2 class="title">Software & AI Engineer</h2>
+                        <p class="location">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" class="inline-icon">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                <circle cx="12" cy="10" r="3"></circle>
+                            </svg>
+                            Remote (EU timezone)
+                            <!-- • Open to relocation -->
+                        </p>
                     </div>
-                    <h1 class="name">Oleksandr Bielov</h1>
-                    <h2 class="title">Software & AI Engineer</h2>
-                    <p class="location">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                            stroke-linecap="round" stroke-linejoin="round" class="inline-icon">
-                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
-                            <circle cx="12" cy="10" r="3"></circle>
-                        </svg>
-                        Remote (EU timezone)
-                        <!-- • Open to relocation -->
-                    </p>
-                </div>
 
-                <div class="pill-nav">
-                    <a href="mailto:obielovswe@gmail.com" class="nav-pill" id="email-link">
-                        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z">
-                            </path>
-                            <polyline points="22,6 12,13 2,6"></polyline>
-                        </svg>
-                        <span>Email</span>
-                    </a>
-                    <!-- <a href="tel:+358XXXXXXXX" class="nav-pill" id="phone-link">
+                    <div class="pill-nav">
+                        <a href="mailto:obielovswe@gmail.com" class="nav-pill" id="email-link">
+                            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z">
+                                </path>
+                                <polyline points="22,6 12,13 2,6"></polyline>
+                            </svg>
+                            <span>Email</span>
+                        </a>
+                        <!-- <a href="tel:+358XXXXXXXX" class="nav-pill" id="phone-link">
                         <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                             <path
                                 d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
@@ -63,384 +64,466 @@
                         </svg>
                         <span>Phone</span>
                     </a> -->
-                    <!-- <a href="https://linkedin.com/in/yourprofile" class="nav-pill" target="_blank">
+                        <!-- <a href="https://linkedin.com/in/yourprofile" class="nav-pill" target="_blank">
                         <svg class="icon" viewBox="0 0 24 24" fill="currentColor">
                             <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
                         </svg>
                         <span>LinkedIn</span>
                     </a> -->
-                    <a href="https://github.com/aleksandrbelov" class="nav-pill" target="_blank">
-                        <svg class="icon" viewBox="0 0 24 24" fill="currentColor">
-                            <path
-                                d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
-                        </svg>
-                        <span>GitHub</span>
-                    </a>
-                    <a href="javascript:void(0)" class="nav-pill" onclick="window.print()">
-                        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                            stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
-                            <polyline points="7 10 12 15 17 10"></polyline>
-                            <line x1="12" y1="15" x2="12" y2="3"></line>
-                        </svg>
-                        <span>Export PDF</span>
-                    </a>
-                </div>
-            </header>
-
-            <!-- Summary Bento -->
-            <section class="bento-card bento-summary hover-glow">
-                <h3 class="bento-title">Overview</h3>
-                <p class="summary-text">
-                    Software Engineer with 10+ years shipping high-scale production services, APIs, and platform
-                    infrastructure at Microsoft, Nuvo, and EPAM. Increasingly focused on applied AI engineering —
-                    recently designed and shipped multiple production AI systems, including end-to-end RAG pipelines for
-                    semantic search and intelligent candidate matching. At Microsoft, delivered critical Teams recording
-                    and
-                    transcription features while increasing release cadence by 3x and cutting incidents by 60% through
-                    automation. Strong track record building scalable systems using C#/.NET, Java, Python, and cloud
-                    platforms.
-                </p>
-            </section>
-
-            <!-- Skills Bento -->
-            <section class="bento-card bento-skill-group hover-glow">
-                <h3 class="bento-title">Skills</h3>
-                <div class="skills-grid"
-                    style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 2rem;">
-                    <div>
-                        <h4
-                            style="font-size: 0.95rem; font-weight: 600; color: var(--text-primary); margin-bottom: 0.5rem; letter-spacing: 0.02em;">
-                            Languages & Frameworks</h4>
-                        <div class="skill-tags">
-                            <span class="skill-tag">C# (.NET Core/Framework)</span>
-                            <span class="skill-tag">Java (Spring Boot, Kafka Streams)</span>
-                            <span class="skill-tag">Python</span>
-                            <span class="skill-tag">FastAPI</span>
-                            <span class="skill-tag">Slack Bolt</span>
-                            <span class="skill-tag">SQL</span>
-                        </div>
+                        <a href="https://github.com/aleksandrbelov" class="nav-pill" target="_blank">
+                            <svg class="icon" viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                            </svg>
+                            <span>GitHub</span>
+                        </a>
+                        <a href="javascript:void(0)" class="nav-pill" onclick="window.print()">
+                            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                                <polyline points="7 10 12 15 17 10"></polyline>
+                                <line x1="12" y1="15" x2="12" y2="3"></line>
+                            </svg>
+                            <span>Export PDF</span>
+                        </a>
                     </div>
+                </header>
 
-                    <div>
-                        <h4
-                            style="font-size: 0.95rem; font-weight: 600; color: var(--text-primary); margin-bottom: 0.5rem; letter-spacing: 0.02em;">
-                            AI/ML Ecosystem</h4>
-                        <div class="skill-tags">
-                            <span class="skill-tag">OpenAI API</span>
-                            <span class="skill-tag">Pinecone</span>
-                            <span class="skill-tag">RAG pipeline design</span>
-                            <span class="skill-tag">hybrid vector search (dense + sparse/BM25)</span>
-                            <span class="skill-tag">multi-query retrieval</span>
-                            <span class="skill-tag">LLM reranking</span>
-                            <span class="skill-tag">LLM prompt engineering</span>
-                            <span class="skill-tag">reasoning model integration</span>
-                            <span class="skill-tag">async AI orchestration</span>
-                        </div>
-                    </div>
+                <!-- Summary Bento -->
+                <section class="bento-card bento-summary hover-glow">
+                    <h3 class="bento-title">Overview</h3>
+                    <p class="summary-text">
+                        Software Engineer with 10+ years shipping high-scale production services, APIs, and platform
+                        infrastructure at Microsoft, Nuvo, and EPAM. Increasingly focused on applied AI engineering —
+                        recently designed and shipped multiple production AI systems, including end-to-end RAG pipelines
+                        for
+                        semantic search and intelligent candidate matching. At Microsoft, delivered critical Teams
+                        recording
+                        and
+                        transcription features while increasing release cadence by 3x and cutting incidents by 60%
+                        through
+                        automation. Strong track record building scalable systems using C#/.NET, Java, Python, and cloud
+                        platforms.
+                    </p>
+                </section>
 
-                    <div>
-                        <h4
-                            style="font-size: 0.95rem; font-weight: 600; color: var(--text-primary); margin-bottom: 0.5rem; letter-spacing: 0.02em;">
-                            Cloud & DevOps</h4>
-                        <div class="skill-tags">
-                            <span class="skill-tag">Azure Kubernetes Service (AKS)</span>
-                            <span class="skill-tag">Docker</span>
-                            <span class="skill-tag">Heroku</span>
-                            <span class="skill-tag">Azure DevOps</span>
-                            <span class="skill-tag">CI/CD automation</span>
-                        </div>
-                    </div>
+                <!-- EXPERIENCE SECTION -->
+                <section class="section experience-section" id="experience">
+                    <h2 class="section-title">Professional Experience</h2>
 
-                    <div>
-                        <h4
-                            style="font-size: 0.95rem; font-weight: 600; color: var(--text-primary); margin-bottom: 0.5rem; letter-spacing: 0.02em;">
-                            Data & Messaging</h4>
-                        <div class="skill-tags">
-                            <span class="skill-tag">Kafka</span>
-                            <span class="skill-tag">Cassandra</span>
-                            <span class="skill-tag">Redis</span>
-                            <span class="skill-tag">Supabase</span>
-                            <span class="skill-tag">MariaDB & MySQL</span>
-                        </div>
-                    </div>
-                </div>
-            </section>
-        </div>
+                    <div class="timeline">
 
-        <!-- EXPERIENCE SECTION -->
-        <section class="section experience-section" id="experience">
-            <h2 class="section-title">Professional Experience</h2>
-
-            <div class="timeline">
-
-                <!-- FREELANCE AI ENGINEER -->
-                <div class="timeline-item bento-card hover-glow reveal-on-scroll" id="freelance-ai">
-                    <div class="timeline-node"></div>
-                    <div class="experience-header">
-                        <div class="exp-meta">
-                            <h3 class="company-name">Freelance</h3>
-                            <p class="job-title-pill">AI Engineer</p>
-                        </div>
-                        <div class="date-badge">2025 – 2026</div>
-                    </div>
-
-                    <div class="project-entry" style="padding-top: 0;">
-                        <h4 class="company-name" style="font-size: 1.1rem; color: var(--text-primary);">AI-Powered
-                            Professional Matchmaking Platform</h4>
-                        <div class="tech-stack-mini">
-                            <span>Python</span><span>OpenAI API</span><span>Pinecone</span><span>Slack
-                                Bolt</span><span>Supabase</span><span>Docker</span><span>Heroku</span>
-                        </div>
-                        <ul class="achievement-list" style="margin-bottom: 2rem;">
-                            <li><strong>Replaced manual networking with instant Slack matchmaking</strong> — built a bot
-                                where users describe their ideal connection in plain language. A backend reasoning model
-                                actively rewrites each query, bridging the gap between conversational requests and
-                                structured profile data while enabling built-in multilingual support.</li>
-                            <li><strong>Automated continuous CRM profile enrichment</strong> — engineered an async
-                                background pipeline that analyses live LinkedIn activity. This ensures professional
-                                matches are based on current actions rather than stale directory data.</li>
-                            <li><strong>Architected model-specific optimization</strong> — implemented a dual-model
-                                system routing high-speed conversational queries to lightweight LLMs, while dedicating
-                                heavier reasoning models to deep background profile processing.</li>
-                        </ul>
-
-                        <h4 class="company-name" style="font-size: 1.1rem; color: var(--text-primary);">MatchCV —
-                            AI-Powered Candidate Search System</h4>
-                        <div class="tech-stack-mini">
-                            <span>Python</span><span>FastAPI</span><span>OpenAI
-                                API</span><span>Pinecone</span><span>ClickUp
-                                API</span><span>Docker</span><span>Heroku</span>
-                        </div>
-                        <ul class="achievement-list">
-                            <li><strong>Turned raw CVs into a searchable talent database</strong> — built a backend
-                                pipeline that automatically extracts text from resumes attached to ClickUp tasks,
-                                allowing recruiters to discover candidates via natural language chat instead of manual
-                                file review.</li>
-                            <li><strong>Made search understand recruiter intent</strong> — implemented an LLM module
-                                that translates plain-language queries (in any language) into multi-angle semantic
-                                searches, whilst extracting hard filters like experience range to guarantee rigid
-                                criteria are met.</li>
-                            <li><strong>Ensured top candidate visibility via re-ranking</strong> — added an LLM acting
-                                as a second-stage judge to score candidates against the original request, catching
-                                strong conceptual matches that basic similarity search would bury.</li>
-                        </ul>
-                    </div>
-
-                    <!-- EXPANDING TECH DETAILS -->
-                    <div class="expanding-block"
-                        style="margin-top: 2rem; background: rgba(0,0,0,0.2); border-radius: var(--radius-sm); border: 1px solid var(--border-card);">
-                        <button class="expand-trigger" aria-expanded="false" aria-controls="ai-content"
-                            style="padding: 1rem 1.5rem;">
-                            <div class="trigger-left">
-                                <span class="badge"
-                                    style="background: rgba(192, 132, 252, 0.1); color: var(--accent-purple);">View Full
-                                    Technical Details</span>
+                        <!-- FREELANCE AI ENGINEER -->
+                        <div class="timeline-item bento-card hover-glow reveal-on-scroll" id="freelance-ai">
+                            <div class="timeline-node"></div>
+                            <div class="experience-header">
+                                <div class="exp-meta">
+                                    <h3 class="company-name">Freelance</h3>
+                                    <p class="job-title-pill">AI Engineer</p>
+                                </div>
+                                <div class="date-badge">2025 – 2026</div>
                             </div>
-                            <div class="trigger-right">
-                                <span class="chevron">
-                                    <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor"
-                                        stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                                        <polyline points="6 9 12 15 18 9"></polyline>
-                                    </svg>
-                                </span>
-                            </div>
-                        </button>
 
-                        <div class="expand-content" id="ai-content">
-                            <div class="expand-inner" style="padding: 0 1.5rem 1.5rem 1.5rem;">
-                                <!-- Project 1 Detailed -->
-                                <div class="project-entry" style="padding-top: 0.5rem;">
-                                    <h3 class="project-name" style="font-size:1.15rem;">AI Matchmaking Platform
-                                        Architecture</h3>
-                                    <ul class="achievement-list">
-                                        <li><strong>Delivered</strong> a multi-stage AI matching pipeline:
-                                            reasoning-model query enrichment (multilingual → optimized English) →
-                                            high-dimensional embeddings → Pinecone cosine similarity search with
-                                            server-side metadata filtering, returning top-10 ranked matches directly in
-                                            Slack.</li>
-                                        <li><strong>Engineered</strong> a fault-tolerant RAG ingestion pipeline —
-                                            sentence-boundary chunking, batched vector upserts, and dynamic metadata
-                                            validation at write time — reliably processing thousands of professional
-                                            profiles per run without data loss.</li>
-                                        <li><strong>Implemented</strong> production-grade LLM reliability — client-side
-                                            token budgeting, exponential backoff with Retry-After parsing, and automatic
-                                            parameter switching for reasoning models — ensuring stable throughput under
-                                            OpenAI rate limits.</li>
-                                        <li><strong>Built</strong> a flexible LLM abstraction layer supporting multiple
-                                            OpenAI APIs, with 90-day Supabase result caching and user-controlled cache
-                                            refresh — reducing redundant API calls and keeping response times fast for
-                                            repeat queries.</li>
-                                        <li><strong>Designed</strong> a fully async Python stack (Slack Bolt, httpx,
-                                            asyncio) ensuring zero blocked Slack ACKs across all concurrent
-                                            interactions.</li>
-                                        <li><strong>Maintained</strong> zero-downtime data integrity during live CRM
-                                            schema migrations via dual-origin DTO abstraction bridging NetHunt CRM and
-                                            Supabase; implemented per-user Fernet-encrypted API key storage for
-                                            individual billing attribution.</li>
+                            <div class="project-entry" style="padding-top: 0;">
+                                <div class="project-block">
+                                    <h4 class="company-name" style="font-size: 1.1rem; color: var(--text-primary);">
+                                        AI-Powered
+                                        Professional Matchmaking Platform</h4>
+                                    <div class="tech-stack-mini">
+                                        <span>Python</span><span>OpenAI API</span><span>Pinecone</span><span>Slack
+                                            Bolt</span><span>Supabase</span><span>Docker</span><span>Heroku</span>
+                                    </div>
+                                    <ul class="achievement-list" style="margin-bottom: 2rem;">
+                                        <li><strong>Replaced manual networking with instant Slack matchmaking</strong> —
+                                            built a bot
+                                            where users describe their ideal connection in plain language. A backend
+                                            reasoning model
+                                            actively rewrites each query, bridging the gap between conversational
+                                            requests and
+                                            structured profile data while enabling built-in multilingual support.</li>
+                                        <li><strong>Automated continuous CRM profile enrichment</strong> — engineered an
+                                            async
+                                            background pipeline that analyses live LinkedIn activity. This ensures
+                                            professional
+                                            matches are based on current actions rather than stale directory data.</li>
+                                        <li><strong>Architected model-specific optimization</strong> — implemented a
+                                            dual-model
+                                            system routing high-speed conversational queries to lightweight LLMs, while
+                                            dedicating
+                                            heavier reasoning models to deep background profile processing.</li>
                                     </ul>
                                 </div>
 
-                                <div class="project-divider" style="margin: 1.5rem 0;"></div>
-
-                                <!-- Project 2 Detailed -->
-                                <div class="project-entry" style="padding-top: 0;">
-                                    <h3 class="project-name" style="font-size:1.15rem;">MatchCV Pipeline Architecture
-                                    </h3>
+                                <div class="project-block">
+                                    <h4 class="company-name" style="font-size: 1.1rem; color: var(--text-primary);">
+                                        MatchCV —
+                                        AI-Powered Candidate Search System</h4>
+                                    <div class="tech-stack-mini">
+                                        <span>Python</span><span>FastAPI</span><span>OpenAI
+                                            API</span><span>Pinecone</span><span>ClickUp
+                                            API</span><span>Docker</span><span>Heroku</span>
+                                    </div>
                                     <ul class="achievement-list">
-                                        <li><strong>Designed</strong> an end-to-end RAG ingestion pipeline that pulls
-                                            PDF/DOCX CV attachments from ClickUp via REST API, extracts and normalises
-                                            raw text, then uses an LLM with structured prompting to parse each resume
-                                            into a consistent schema — name, skills, experience, and summary — ready for
-                                            indexing.</li>
-                                        <li><strong>Engineered</strong> a vector indexing layer that converts structured
-                                            resume text into high-dimensional embeddings and upserts records into
-                                            Pinecone with rich metadata, enabling precise server-side filtering by
-                                            experience range, skills, and location.</li>
-                                        <li><strong>Implemented</strong> an LLM-powered <code>QueryEnhancer</code>
-                                            module that rewrites natural language search queries — extracting job title,
-                                            experience range, required skills, location, and language level — and
-                                            generates multiple semantic query alternatives to diversify query semantics
-                                            and improve vector search recall.</li>
-                                        <li><strong>Built</strong> a multi-query re-ranking layer with Pinecone hybrid
-                                            search (dense + sparse BM25) — executing parallel queries, deduplicating
-                                            results, and combining lexical and semantic recall for improved match
-                                            quality across both keyword-heavy and conceptual searches.</li>
-                                        <li><strong>Deployed</strong> a production-ready FastAPI service on
-                                            Docker/Heroku, wired to ClickUp webhooks so that natural language queries
-                                            posted in a ClickUp Chat thread automatically trigger candidate search and
-                                            return ranked results as a reply.</li>
+                                        <li><strong>Turned raw CVs into a searchable talent database</strong> — built a
+                                            backend
+                                            pipeline that automatically extracts text from resumes attached to ClickUp
+                                            tasks,
+                                            allowing recruiters to discover candidates via natural language chat instead
+                                            of manual
+                                            file review.</li>
+                                        <li><strong>Made search understand recruiter intent</strong> — implemented an
+                                            LLM module
+                                            that translates plain-language queries (in any language) into multi-angle
+                                            semantic
+                                            searches, whilst extracting hard filters like experience range to guarantee
+                                            rigid
+                                            criteria are met.</li>
+                                        <li><strong>Ensured top candidate visibility via re-ranking</strong> — added an
+                                            LLM acting
+                                            as a second-stage judge to score candidates against the original request,
+                                            catching
+                                            strong conceptual matches that basic similarity search would bury.</li>
                                     </ul>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                </div>
 
-                <!-- MSFT -->
-                <div class="timeline-item bento-card hover-glow reveal-on-scroll">
-                    <div class="timeline-node msft-node"></div>
-                    <div class="experience-header">
-                        <div class="exp-meta">
-                            <h3 class="company-name">Microsoft</h3>
-                            <p class="job-title-pill">Software Engineer</p>
-                            <p class="job-subtitle">Teams Call Recording, Transcription & Captioning</p>
-                        </div>
-                        <div class="date-badge">2020 – 2025</div>
-                    </div>
+                            <!-- EXPANDING TECH DETAILS -->
+                            <div class="expanding-block"
+                                style="margin-top: 2rem; background: rgba(0,0,0,0.2); border-radius: var(--radius-sm); border: 1px solid var(--border-card);">
+                                <button class="expand-trigger" aria-expanded="false" aria-controls="ai-content"
+                                    style="padding: 1rem 1.5rem;">
+                                    <div class="trigger-left">
+                                        <span class="badge"
+                                            style="background: rgba(192, 132, 252, 0.1); color: var(--accent-purple);">View
+                                            Full
+                                            Technical Details</span>
+                                    </div>
+                                    <div class="trigger-right">
+                                        <span class="chevron">
+                                            <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor"
+                                                stroke-width="2" fill="none" stroke-linecap="round"
+                                                stroke-linejoin="round">
+                                                <polyline points="6 9 12 15 18 9"></polyline>
+                                            </svg>
+                                        </span>
+                                    </div>
+                                </button>
 
-                    <ul class="achievement-list">
-                        <li><strong>Enhanced product accessibility through transcription architecture
-                                improvements</strong> — drove multi-phase initiative to modernize captioning
-                            capabilities, delivering features like server-side multilingual caption selection and
-                            improving inclusivity for international organizations.</li>
-                        <li><strong>Accelerated release velocity and reduced risk</strong> — transformed manual
-                            deployment processes into automated, one-click workflows, increasing release cadence by 3x
-                            while making production rollouts predictable.</li>
-                        <li><strong>Maximized QA efficiency</strong> — eliminated 75% of manual regression testing
-                            effort by introducing automated end-to-end validation across all deployment stages, freeing
-                            the team to focus on feature development.</li>
-                        <li><strong>Reduced production incidents and improved reliability</strong> — cut release-related
-                            outages by 60% through continuous automated testing integrated into CI/CD pipelines,
-                            catching regressions before they reached customers.</li>
-                        <li><strong>Improved infrastructure resilience</strong> — contributed to the cloud-native
-                            platform migration (Kubernetes/AKS), simplifying large-scale deployments and ensuring high
-                            availability across multiple regions.</li>
-                    </ul>
-                    <div class="key-achievement highlight-box">
-                        <div class="highlight-icon">⭐</div>
-                        <div class="highlight-text">
-                            <strong>Key Achievement:</strong> This automation initiative was a primary driver for my
-                            promotion and established the foundational infrastructure now used by the entire Teams
-                            recording organization.
-                        </div>
-                    </div>
-                </div>
+                                <div class="expand-content" id="ai-content">
+                                    <div class="expand-inner" style="padding: 0 1.5rem 1.5rem 1.5rem;">
+                                        <!-- Project 1 Detailed -->
+                                        <div class="project-entry" style="padding-top: 0.5rem;">
+                                            <h3 class="project-name" style="font-size:1.15rem;">AI Matchmaking Platform
+                                                Architecture</h3>
+                                            <ul class="achievement-list">
+                                                <li><strong>Delivered</strong> a multi-stage AI matching pipeline:
+                                                    reasoning-model query enrichment (multilingual → optimized English)
+                                                    →
+                                                    high-dimensional embeddings → Pinecone cosine similarity search with
+                                                    server-side metadata filtering, returning top-10 ranked matches
+                                                    directly in
+                                                    Slack.</li>
+                                                <li><strong>Engineered</strong> a fault-tolerant RAG ingestion pipeline
+                                                    —
+                                                    sentence-boundary chunking, batched vector upserts, and dynamic
+                                                    metadata
+                                                    validation at write time — reliably processing thousands of
+                                                    professional
+                                                    profiles per run without data loss.</li>
+                                                <li><strong>Implemented</strong> production-grade LLM reliability —
+                                                    client-side
+                                                    token budgeting, exponential backoff with Retry-After parsing, and
+                                                    automatic
+                                                    parameter switching for reasoning models — ensuring stable
+                                                    throughput under
+                                                    OpenAI rate limits.</li>
+                                                <li><strong>Built</strong> a flexible LLM abstraction layer supporting
+                                                    multiple
+                                                    OpenAI APIs, with 90-day Supabase result caching and user-controlled
+                                                    cache
+                                                    refresh — reducing redundant API calls and keeping response times
+                                                    fast for
+                                                    repeat queries.</li>
+                                                <li><strong>Designed</strong> a fully async Python stack (Slack Bolt,
+                                                    httpx,
+                                                    asyncio) ensuring zero blocked Slack ACKs across all concurrent
+                                                    interactions.</li>
+                                                <li><strong>Maintained</strong> zero-downtime data integrity during live
+                                                    CRM
+                                                    schema migrations via dual-origin DTO abstraction bridging NetHunt
+                                                    CRM and
+                                                    Supabase; implemented per-user Fernet-encrypted API key storage for
+                                                    individual billing attribution.</li>
+                                            </ul>
+                                        </div>
 
-                <!-- Nuvo -->
-                <div class="timeline-item bento-card hover-glow reveal-on-scroll">
-                    <div class="timeline-node"></div>
-                    <div class="experience-header">
-                        <div class="exp-meta">
-                            <h3 class="company-name">Nuvo Group Ltd.</h3>
-                            <p class="job-title-pill">Senior Software Engineer</p>
-                            <p class="job-subtitle">Wearable sensor-based technologies monitoring pregnancy via big data
+                                        <div class="project-divider" style="margin: 1.5rem 0;"></div>
+
+                                        <!-- Project 2 Detailed -->
+                                        <div class="project-entry" style="padding-top: 0;">
+                                            <h3 class="project-name" style="font-size:1.15rem;">MatchCV Pipeline
+                                                Architecture
+                                            </h3>
+                                            <ul class="achievement-list">
+                                                <li><strong>Designed</strong> an end-to-end RAG ingestion pipeline that
+                                                    pulls
+                                                    PDF/DOCX CV attachments from ClickUp via REST API, extracts and
+                                                    normalises
+                                                    raw text, then uses an LLM with structured prompting to parse each
+                                                    resume
+                                                    into a consistent schema — name, skills, experience, and summary —
+                                                    ready for
+                                                    indexing.</li>
+                                                <li><strong>Engineered</strong> a vector indexing layer that converts
+                                                    structured
+                                                    resume text into high-dimensional embeddings and upserts records
+                                                    into
+                                                    Pinecone with rich metadata, enabling precise server-side filtering
+                                                    by
+                                                    experience range, skills, and location.</li>
+                                                <li><strong>Implemented</strong> an LLM-powered
+                                                    <code>QueryEnhancer</code>
+                                                    module that rewrites natural language search queries — extracting
+                                                    job title,
+                                                    experience range, required skills, location, and language level —
+                                                    and
+                                                    generates multiple semantic query alternatives to diversify query
+                                                    semantics
+                                                    and improve vector search recall.</li>
+                                                <li><strong>Built</strong> a multi-query re-ranking layer with Pinecone
+                                                    hybrid
+                                                    search (dense + sparse BM25) — executing parallel queries,
+                                                    deduplicating
+                                                    results, and combining lexical and semantic recall for improved
+                                                    match
+                                                    quality across both keyword-heavy and conceptual searches.</li>
+                                                <li><strong>Deployed</strong> a production-ready FastAPI service on
+                                                    Docker/Heroku, wired to ClickUp webhooks so that natural language
+                                                    queries
+                                                    posted in a ClickUp Chat thread automatically trigger candidate
+                                                    search and
+                                                    return ranked results as a reply.</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- MSFT -->
+                        <div class="timeline-item bento-card hover-glow reveal-on-scroll">
+                            <div class="timeline-node msft-node"></div>
+                            <div class="experience-header">
+                                <div class="exp-meta">
+                                    <h3 class="company-name">Microsoft</h3>
+                                    <p class="job-title-pill">Software Engineer</p>
+                                    <p class="job-subtitle">Teams Call Recording, Transcription & Captioning</p>
+                                </div>
+                                <div class="date-badge">2020 – 2025</div>
+                            </div>
+
+                            <ul class="achievement-list">
+                                <li><strong>Enhanced product accessibility through transcription architecture
+                                        improvements</strong> — drove multi-phase initiative to modernize captioning
+                                    capabilities, delivering features like server-side multilingual caption selection
+                                    and
+                                    improving inclusivity for international organizations.</li>
+                                <li><strong>Accelerated release velocity and reduced risk</strong> — transformed manual
+                                    deployment processes into automated, one-click workflows, increasing release cadence
+                                    by 3x
+                                    while making production rollouts predictable.</li>
+                                <li><strong>Maximized QA efficiency</strong> — eliminated 75% of manual regression
+                                    testing
+                                    effort by introducing automated end-to-end validation across all deployment stages,
+                                    freeing
+                                    the team to focus on feature development.</li>
+                                <li><strong>Reduced production incidents and improved reliability</strong> — cut
+                                    release-related
+                                    outages by 60% through continuous automated testing integrated into CI/CD pipelines,
+                                    catching regressions before they reached customers.</li>
+                                <li><strong>Improved infrastructure resilience</strong> — contributed to the
+                                    cloud-native
+                                    platform migration (Kubernetes/AKS), simplifying large-scale deployments and
+                                    ensuring high
+                                    availability across multiple regions.</li>
+                            </ul>
+                            <div class="key-achievement highlight-box">
+                                <div class="highlight-icon">⭐</div>
+                                <div class="highlight-text">
+                                    <strong>Key Achievement:</strong> This automation initiative was a primary driver
+                                    for my
+                                    promotion and established the foundational infrastructure now used by the entire
+                                    Teams
+                                    recording organization.
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Nuvo -->
+                        <div class="timeline-item bento-card hover-glow reveal-on-scroll">
+                            <div class="timeline-node"></div>
+                            <div class="experience-header">
+                                <div class="exp-meta">
+                                    <h3 class="company-name">Nuvo Group Ltd.</h3>
+                                    <p class="job-title-pill">Senior Software Engineer</p>
+                                    <p class="job-subtitle">Wearable sensor-based technologies monitoring pregnancy via
+                                        big data
+                                    </p>
+                                </div>
+                                <div class="date-badge">2018 – 2019</div>
+                            </div>
+                            <ul class="achievement-list">
+                                <li><strong>Improved data reliability and enabled real-time analytics</strong> — built
+                                    streaming
+                                    data pipeline (Kafka, Cassandra, Redis) processing telemetry from wearable devices
+                                    with
+                                    sub-second latency, increasing data delivery reliability.</li>
+                                <li><strong>Accelerated feature development</strong> — designed messaging infrastructure
+                                    for
+                                    real-time analytics and anomaly detection, enabling product team to ship health
+                                    monitoring
+                                    features faster without backend bottlenecks.</li>
+                                <li><strong>Ensured platform scalability</strong> — collaborated with R&D and cloud
+                                    engineers to
+                                    deliver AWS-based infrastructure improvements, supporting rapid user growth and
+                                    maintaining
+                                    SLA during traffic spikes.</li>
+                            </ul>
+                        </div>
+
+                        <!-- EPAM -->
+                        <div class="timeline-item bento-card hover-glow reveal-on-scroll">
+                            <div class="timeline-node"></div>
+                            <div class="experience-header">
+                                <div class="exp-meta">
+                                    <h3 class="company-name">EPAM Systems</h3>
+                                    <p class="job-title-pill">Software Engineer</p>
+                                </div>
+                                <div class="date-badge">2015 – 2018</div>
+                            </div>
+                            <ul class="achievement-list">
+                                <li><strong>Delivered high-performance backend services</strong> — built RESTful APIs
+                                    and Spring
+                                    microservices for enterprise clients (finance, telecom), handling 10M+ daily
+                                    requests with
+                                    optimized caching (Redis) and database performance (MariaDB).</li>
+                                <li><strong>Improved team velocity and code quality</strong> — led 3-person team through
+                                    full
+                                    SDLC, establishing code review practices, CI/CD automation (Jenkins, Gradle), and
+                                    testing
+                                    standards that reduced production defects and accelerated delivery cycles.</li>
+                                <li><strong>Enabled business growth</strong> — designed and shipped backend features for
+                                    enterprise web applications, supporting new product capabilities and client
+                                    onboarding.</li>
+                            </ul>
+                        </div>
+
+                        <!-- Lifecell -->
+                        <div class="timeline-item bento-card hover-glow reveal-on-scroll">
+                            <div class="timeline-node"></div>
+                            <div class="experience-header">
+                                <div class="exp-meta">
+                                    <h3 class="company-name">LLC "Astelit" (Lifecell)</h3>
+                                    <p class="job-title-pill">Junior Software Engineer</p>
+                                </div>
+                                <div class="date-badge">2013 – 2015</div>
+                            </div>
+                            <ul class="achievement-list">
+                                <li>Customized Oracle Maximo applications (Java, JSP, PL/SQL), supported production
+                                    systems, and
+                                    provided application monitoring and user support.</li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </section>
+
+                <!-- EDUCATION SECTION -->
+                <section class="section education-section">
+                    <h2 class="section-title">Education</h2>
+                    <div class="bento-card edu-card hover-glow reveal-on-scroll">
+                        <div class="edu-icon-wrap">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                                <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+                            </svg>
+                        </div>
+                        <div class="edu-details">
+                            <h3 class="degree">Bachelor's Degree in Computer Science</h3>
+                            <p class="major">Applied Mathematics / Applied Cryptography</p>
+                            <p class="university">National Technical University of Ukraine "Kyiv Polytechnic Institute"
                             </p>
                         </div>
-                        <div class="date-badge">2018 – 2019</div>
                     </div>
-                    <ul class="achievement-list">
-                        <li><strong>Improved data reliability and enabled real-time analytics</strong> — built streaming
-                            data pipeline (Kafka, Cassandra, Redis) processing telemetry from wearable devices with
-                            sub-second latency, increasing data delivery reliability.</li>
-                        <li><strong>Accelerated feature development</strong> — designed messaging infrastructure for
-                            real-time analytics and anomaly detection, enabling product team to ship health monitoring
-                            features faster without backend bottlenecks.</li>
-                        <li><strong>Ensured platform scalability</strong> — collaborated with R&D and cloud engineers to
-                            deliver AWS-based infrastructure improvements, supporting rapid user growth and maintaining
-                            SLA during traffic spikes.</li>
-                    </ul>
-                </div>
+                </section>
+            </main> <!-- End layout-main -->
 
-                <!-- EPAM -->
-                <div class="timeline-item bento-card hover-glow reveal-on-scroll">
-                    <div class="timeline-node"></div>
-                    <div class="experience-header">
-                        <div class="exp-meta">
-                            <h3 class="company-name">EPAM Systems</h3>
-                            <p class="job-title-pill">Software Engineer</p>
+            <aside class="layout-sidebar">
+                <!-- Skills Bento -->
+                <section class="bento-card bento-skill-group hover-glow">
+                    <h3 class="bento-title">Skills</h3>
+                    <div class="skills-grid" style="display: flex; flex-direction: column; gap: 1.5rem;">
+                        <div>
+                            <h4
+                                style="font-size: 0.95rem; font-weight: 600; color: var(--text-primary); margin-bottom: 0.5rem; letter-spacing: 0.02em;">
+                                Languages & Frameworks</h4>
+                            <div class="skill-tags">
+                                <span class="skill-tag">C# (.NET Core/Framework)</span>
+                                <span class="skill-tag">Java (Spring Boot, Kafka Streams)</span>
+                                <span class="skill-tag">Python</span>
+                                <span class="skill-tag">FastAPI</span>
+                                <span class="skill-tag">Slack Bolt</span>
+                                <span class="skill-tag">SQL</span>
+                            </div>
                         </div>
-                        <div class="date-badge">2015 – 2018</div>
-                    </div>
-                    <ul class="achievement-list">
-                        <li><strong>Delivered high-performance backend services</strong> — built RESTful APIs and Spring
-                            microservices for enterprise clients (finance, telecom), handling 10M+ daily requests with
-                            optimized caching (Redis) and database performance (MariaDB).</li>
-                        <li><strong>Improved team velocity and code quality</strong> — led 3-person team through full
-                            SDLC, establishing code review practices, CI/CD automation (Jenkins, Gradle), and testing
-                            standards that reduced production defects and accelerated delivery cycles.</li>
-                        <li><strong>Enabled business growth</strong> — designed and shipped backend features for
-                            enterprise web applications, supporting new product capabilities and client onboarding.</li>
-                    </ul>
-                </div>
 
-                <!-- Lifecell -->
-                <div class="timeline-item bento-card hover-glow reveal-on-scroll">
-                    <div class="timeline-node"></div>
-                    <div class="experience-header">
-                        <div class="exp-meta">
-                            <h3 class="company-name">LLC "Astelit" (Lifecell)</h3>
-                            <p class="job-title-pill">Junior Software Engineer</p>
+                        <div>
+                            <h4
+                                style="font-size: 0.95rem; font-weight: 600; color: var(--text-primary); margin-bottom: 0.5rem; letter-spacing: 0.02em;">
+                                AI/ML Ecosystem</h4>
+                            <div class="skill-tags">
+                                <span class="skill-tag">OpenAI API</span>
+                                <span class="skill-tag">Pinecone</span>
+                                <span class="skill-tag">RAG pipeline design</span>
+                                <span class="skill-tag">hybrid vector search (dense + sparse/BM25)</span>
+                                <span class="skill-tag">multi-query retrieval</span>
+                                <span class="skill-tag">LLM reranking</span>
+                                <span class="skill-tag">LLM prompt engineering</span>
+                                <span class="skill-tag">reasoning model integration</span>
+                                <span class="skill-tag">async AI orchestration</span>
+                            </div>
                         </div>
-                        <div class="date-badge">2013 – 2015</div>
+
+                        <div>
+                            <h4
+                                style="font-size: 0.95rem; font-weight: 600; color: var(--text-primary); margin-bottom: 0.5rem; letter-spacing: 0.02em;">
+                                Cloud & DevOps</h4>
+                            <div class="skill-tags">
+                                <span class="skill-tag">Azure Kubernetes Service (AKS)</span>
+                                <span class="skill-tag">Docker</span>
+                                <span class="skill-tag">Heroku</span>
+                                <span class="skill-tag">Azure DevOps</span>
+                                <span class="skill-tag">CI/CD automation</span>
+                            </div>
+                        </div>
+
+                        <div>
+                            <h4
+                                style="font-size: 0.95rem; font-weight: 600; color: var(--text-primary); margin-bottom: 0.5rem; letter-spacing: 0.02em;">
+                                Data & Messaging</h4>
+                            <div class="skill-tags">
+                                <span class="skill-tag">Kafka</span>
+                                <span class="skill-tag">Cassandra</span>
+                                <span class="skill-tag">Redis</span>
+                                <span class="skill-tag">Supabase</span>
+                                <span class="skill-tag">MariaDB & MySQL</span>
+                            </div>
+                        </div>
                     </div>
-                    <ul class="achievement-list">
-                        <li>Customized Oracle Maximo applications (Java, JSP, PL/SQL), supported production systems, and
-                            provided application monitoring and user support.</li>
-                    </ul>
-                </div>
-
-            </div>
-        </section>
-
-        <!-- EDUCATION SECTION -->
-        <section class="section education-section">
-            <h2 class="section-title">Education</h2>
-            <div class="bento-card edu-card hover-glow reveal-on-scroll">
-                <div class="edu-icon-wrap">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                        stroke-linejoin="round">
-                        <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
-                        <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
-                    </svg>
-                </div>
-                <div class="edu-details">
-                    <h3 class="degree">Bachelor's Degree in Computer Science</h3>
-                    <p class="major">Applied Mathematics / Applied Cryptography</p>
-                    <p class="university">National Technical University of Ukraine "Kyiv Polytechnic Institute"</p>
-                </div>
-            </div>
-        </section>
+                </section>
+            </aside>
+        </div> <!-- End layout-grid -->
 
         <!-- Footer -->
         <footer class="footer reveal-on-scroll">

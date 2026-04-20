@@ -98,12 +98,54 @@ h1, h2, h3, h4, h5, h6 {
     z-index: 10;
 }
 
+/* ===== LAYOUT GRID (Sidebar Architecture) ===== */
+.layout-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    align-items: start;
+}
+
+@media (min-width: 900px) {
+    .layout-grid {
+        grid-template-columns: 2.2fr 1fr;
+    }
+}
+
+.layout-sidebar {
+    position: sticky;
+    top: 2rem;
+    max-height: calc(100vh - 4rem);
+    overflow-y: auto;
+    
+    /* Modern sleek scrollbar for the sidebar */
+    scrollbar-width: thin; /* Firefox */
+    scrollbar-color: rgba(255, 255, 255, 0.15) transparent;
+}
+
+.layout-sidebar::-webkit-scrollbar {
+    width: 6px;
+}
+
+.layout-sidebar::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.layout-sidebar::-webkit-scrollbar-thumb {
+    background-color: rgba(255, 255, 255, 0.15);
+    border-radius: var(--radius-pill);
+}
+
+.layout-sidebar::-webkit-scrollbar-thumb:hover {
+    background-color: var(--accent-cyan);
+}
+
 /* ===== BENTO GRID ===== */
 .bento-grid {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     gap: 1.5rem;
-    margin-bottom: 3rem;
+    margin-bottom: 1.5rem;
 }
 
 .bento-card {
@@ -459,7 +501,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* ===== EXPERIENCE TIMELINE ===== */
-.experience-section { margin-top: 4rem; }
+.experience-section { margin-top: 2.5rem; }
 
 .timeline {
     position: relative;
@@ -650,8 +692,8 @@ h1, h2, h3, h4, h5, h6 {
     body {
         background: white !important;
         color: #111 !important;
-        font-size: 10pt;
-        line-height: 1.5;
+        font-size: 9.5pt !important;
+        line-height: 1.35 !important;
     }
 
     .bg-mesh, .bg-noise, #pointer-glow, .footer-glow,
@@ -682,6 +724,18 @@ h1, h2, h3, h4, h5, h6 {
         margin-bottom: 1rem !important;
     }
 
+    /* Print Two-Column Layout */
+    .layout-grid {
+        display: grid !important;
+        grid-template-columns: 2.8fr 1fr !important;
+        gap: 1.5rem !important;
+        align-items: start !important;
+    }
+
+    .layout-sidebar {
+        position: static !important;
+    }
+
     .bento-card {
         box-shadow: none !important;
         backdrop-filter: none !important;
@@ -692,30 +746,35 @@ h1, h2, h3, h4, h5, h6 {
         border-radius: 0 !important;
         padding: 0.75rem 0 !important;
         margin-bottom: 0.5rem !important;
-        break-inside: avoid;
+        break-inside: auto !important; /* Allow huge items to break, fixing the large page gaps */
     }
 
-    /* Tighten spacing */
+    /* Tighten spacing heavily to fit Freelance on page 1 */
+    .bento-hero {
+        margin-bottom: 0.5rem !important;
+        padding-bottom: 0.2rem !important;
+    }
+
     .section {
-        margin-top: 1rem !important;
+        margin-top: 0.5rem !important;
     }
 
     .experience-section {
-        margin-top: 1rem !important;
+        margin-top: 0.5rem !important;
     }
 
     .section-title {
-        font-size: 1.2rem !important;
-        margin-bottom: 0.75rem !important;
+        font-size: 1.15rem !important;
+        margin-bottom: 0.4rem !important;
     }
 
     .bento-title {
         font-size: 1rem !important;
-        margin-bottom: 0.75rem !important;
+        margin-bottom: 0.4rem !important;
     }
 
     .achievement-list li {
-        margin-bottom: 0.4rem !important;
+        margin-bottom: 0.2rem !important;
     }
 
     /* Timeline */
@@ -737,16 +796,16 @@ h1, h2, h3, h4, h5, h6 {
     }
 
     .experience-header {
-        margin-bottom: 0.5rem !important;
+        margin-bottom: 0.2rem !important;
     }
 
     .company-name {
-        font-size: 1.1rem !important;
+        font-size: 1.05rem !important;
     }
 
     .highlight-box {
-        margin-top: 0.5rem !important;
-        padding: 0.5rem !important;
+        margin-top: 0.4rem !important;
+        padding: 0.4rem !important;
     }
 
     /* Hide the technical details accordion entirely to keep PDF concise */
@@ -754,19 +813,32 @@ h1, h2, h3, h4, h5, h6 {
         display: none !important;
     }
 
-    /* Skills grid */
+    /* Skills grid - single column to fit perfectly in the side panel */
     .skills-grid {
-        grid-template-columns: repeat(2, 1fr) !important;
+        display: flex !important;
+        flex-direction: column !important;
         gap: 0.75rem !important;
     }
 
+    .skill-tags {
+        display: flex !important;
+        flex-wrap: wrap !important;
+        gap: 0.4rem !important;
+    }
+
     .skill-tag {
-        font-size: 0.75rem !important;
-        padding: 0.2rem 0.5rem !important;
+        font-size: 0.8rem !important;
+        padding: 0.3rem 0.6rem !important;
+        border: 1px solid #ccc !important;
+        border-radius: 6px !important;
+        background-color: #f8f9fa !important;
+        color: #333 !important;
+        display: inline-block !important;
     }
 
     .tech-stack-mini {
-        margin-bottom: 0.5rem !important;
+        margin-bottom: 0.3rem !important;
+        margin-top: 0.2rem !important;
     }
 
     /* Name gradient */
@@ -774,16 +846,18 @@ h1, h2, h3, h4, h5, h6 {
         background: none !important;
         -webkit-text-fill-color: #000 !important;
         color: #000 !important;
-        font-size: 2rem !important;
+        font-size: 1.8rem !important;
+        margin-bottom: 0.2rem !important;
     }
 
     .title {
-        font-size: 1.1rem !important;
-        margin-bottom: 0.5rem !important;
+        font-size: 1rem !important;
+        margin-bottom: 0.3rem !important;
     }
 
     .availability-badge {
-        margin-bottom: 0.5rem !important;
+        margin-bottom: 0.3rem !important;
+        padding: 0.2rem 0.6rem !important;
     }
 
     /* Education card */
@@ -795,6 +869,27 @@ h1, h2, h3, h4, h5, h6 {
     .summary-text {
         font-size: 0.9rem !important;
         line-height: 1.6 !important;
+    }
+
+    /* Page-break logic to keep related items together */
+    h1, h2, h3, h4, h5, h6, .experience-header, .tech-stack-mini {
+        break-after: avoid !important;
+        page-break-after: avoid !important;
+    }
+
+    .achievement-list, .highlight-box, .edu-card, .project-block {
+        break-inside: avoid !important;
+        page-break-inside: avoid !important;
+    }
+
+    .achievement-list li {
+        break-inside: avoid !important;
+        page-break-inside: avoid !important;
+    }
+
+    p, li {
+        orphans: 3;
+        widows: 3;
     }
 
     footer, .footer {
