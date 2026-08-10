@@ -7,9 +7,9 @@ Senior software engineer with 10+ years building distributed services, APIs, and
 ---
 ## SKILLS
 **Languages & Frameworks:** C# (.NET Core/Framework), Java (Spring Boot, Kafka Streams), Python, FastAPI, Slack Bolt, SQL  
-**AI/ML:** OpenAI API, Pinecone, RAG pipeline design, Hybrid vector search (dense + sparse/BM25), Multi-query retrieval, LLM reranking, Reasoning model integration, Async AI orchestration  
+**AI/ML Ecosystem:** OpenAI API, Pinecone, RAG pipeline design, Hybrid vector search (dense + sparse/BM25), Multi-query retrieval, LLM reranking, Reasoning model integration, Async AI orchestration  
 **Cloud & DevOps:** Azure Kubernetes Service (AKS), Docker, Heroku, Azure DevOps, CI/CD automation  
-**Data & Messaging:** Kafka, Cassandra, Redis, Supabase, MariaDB, MySQL
+**Data & Messaging:** Kafka, Cassandra, Redis, Supabase, MariaDB & MySQL
 ---
 ## EXPERIENCE
 ### **Freelance — AI Engineer**

@@ -132,7 +132,8 @@
                                     <ul class="achievement-list" style="margin-bottom: 2rem;">
                                         <li><strong>Replaced manual networking with instant Slack matchmaking</strong> —
                                             built a bot
-                                            where users describe their ideal connection in plain language. A backend
+                                            where users describe their ideal connection in plain language (e.g.
+                                            founders, investors). A backend
                                             reasoning model
                                             actively rewrites each query, bridging the gap between conversational
                                             requests and
@@ -285,7 +286,8 @@
                                                     and
                                                     generates multiple semantic query alternatives to diversify query
                                                     semantics
-                                                    and improve vector search recall.</li>
+                                                    and improve vector search recall; supports multilingual
+                                                    input (e.g., Ukrainian → English semantic search).</li>
                                                 <li><strong>Built</strong> a multi-query re-ranking layer with Pinecone
                                                     hybrid
                                                     search (dense + sparse BM25) — executing parallel queries,
@@ -298,7 +300,9 @@
                                                     queries
                                                     posted in a ClickUp Chat thread automatically trigger candidate
                                                     search and
-                                                    return ranked results as a reply.</li>
+                                                    return ranked results as a reply — with a clean layered
+                                                    architecture and a comprehensive pytest suite covering
+                                                    ingestion, retrieval, and ranking layers.</li>
                                             </ul>
                                         </div>
                                     </div>
