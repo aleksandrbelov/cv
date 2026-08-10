@@ -72,20 +72,24 @@ document.addEventListener('DOMContentLoaded', () => {
     // 4. COPY TO CLIPBOARD FOR PILL NAV
     const emailLink = document.getElementById('email-link');
     if (emailLink) {
+        const emailLabel = emailLink.querySelector('span');
+        const originalText = emailLabel.textContent;
+        let revertTimer = null;
+
         emailLink.addEventListener('click', function(e) {
             e.preventDefault(); // allow copy instead of opening client immediately
             const email = this.getAttribute('href').replace('mailto:', '');
-            
+
             navigator.clipboard.writeText(email).then(() => {
-                const originalText = this.querySelector('span').textContent;
-                this.querySelector('span').textContent = 'Copied!';
-                
+                clearTimeout(revertTimer);
+                emailLabel.textContent = 'Copied!';
+
                 // Add a little pop effect
                 this.style.transform = 'scale(1.05)';
                 setTimeout(() => this.style.transform = '', 200);
 
-                setTimeout(() => {
-                    this.querySelector('span').textContent = originalText;
+                revertTimer = setTimeout(() => {
+                    emailLabel.textContent = originalText;
                 }, 2000);
             }).catch(err => {
                 // Fallback action

@@ -16,13 +16,13 @@ Senior software engineer with 10+ years building distributed services, APIs, and
 *AI-Powered Professional Matchmaking Platform* · 2025–2026  
 **Tech Stack:** Python, OpenAI API, Pinecone, Slack Bolt, Supabase, Docker, Heroku
 * **Replaced manual networking with instant Slack matchmaking** — built a bot where users describe their ideal connection in plain language (e.g. founders, investors). A backend reasoning model actively rewrites each query, bridging the gap between conversational requests and structured profile data while enabling built-in multilingual support.
-* **Automated continuous CRM profile enrichment** — engineered an async background pipeline that analyses live LinkedIn activity. This ensures professional matches are based on current actions rather than stale directory data.
+* **Automated continuous CRM profile enrichment** — engineered an async background pipeline that analyzes live LinkedIn activity. This ensures professional matches are based on current actions rather than stale directory data.
 * **Architected model-specific optimization** — implemented a dual-model system routing high-speed conversational queries to lightweight LLMs, while dedicating heavier reasoning models to deep background profile processing.
 ---
 *MatchCV — AI-Powered Candidate Search System* · 2025–2026
 **Tech Stack:** Python, FastAPI, OpenAI API, Pinecone, ClickUp API, Docker, Heroku
 * **Turned raw CVs into a searchable talent database** — built a backend pipeline that automatically extracts text from resumes attached to ClickUp tasks, allowing recruiters to discover candidates via natural language chat instead of manual file review.
-* **Made search understand recruiter intent** — implemented an LLM module that translates plain-language queries (in any language) into multi-angle semantic searches, whilst extracting hard filters like experience range to guarantee rigid criteria are met.
+* **Made search understand recruiter intent** — implemented an LLM module that translates plain-language queries (in any language) into multi-angle semantic searches, while extracting hard filters like experience range to guarantee rigid criteria are met.
 * **Ensured top candidate visibility via re-ranking** — added an LLM acting as a second-stage judge to score candidates against the original request, catching strong conceptual matches that basic similarity search would bury.
 
 📄 [Full technical detail → AI_ML_PROJECTS.md](AI_ML_PROJECTS.md)
