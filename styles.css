@@ -280,6 +280,11 @@ h1, h2, h3, h4, h5, h6 {
     text-decoration: underline;
 }
 
+/* Shown only in the printed/PDF output */
+.print-only {
+    display: none !important;
+}
+
 .inline-icon {
     width: 1.25rem;
     height: 1.25rem;
@@ -748,9 +753,15 @@ h1, h2, h3, h4, h5, h6 {
         display: none !important;
     }
 
+    /* .pill-nav is hidden above, so this is the only contact info in the PDF */
+    .contact-line.print-only {
+        display: flex !important;
+    }
+
     .contact-line {
-        margin-top: 0.25rem !important;
-        font-size: 0.85rem !important;
+        margin-top: 0.2rem !important;
+        gap: 0.5rem !important;
+        font-size: 0.8rem !important;
         color: #222 !important;
     }
 
