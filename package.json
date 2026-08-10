@@ -1,6 +1,8 @@
 {
   "scripts": {
-    "pdf": "node generate-pdf.js"
+    "check": "node check-content.js",
+    "pdf": "node generate-pdf.js",
+    "build": "npm run check && npm run pdf"
   },
   "devDependencies": {
     "puppeteer": "^24.41.0"

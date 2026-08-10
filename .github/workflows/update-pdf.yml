@@ -35,6 +35,9 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
+      - name: Check index.html matches README (source of truth)
+        run: npm run check
+
       - name: Generate PDF
         run: npm run pdf
 
