@@ -1,4 +1,8 @@
 {
+  "name": "oleksandr-bielov-resume",
+  "version": "1.0.0",
+  "private": true,
+  "license": "UNLICENSED",
   "scripts": {
     "check": "node check-content.js",
     "pdf": "node generate-pdf.js",

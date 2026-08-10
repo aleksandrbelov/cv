@@ -34,7 +34,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 // Open
                 expandTrigger.setAttribute('aria-expanded', 'true');
                 expandContent.classList.add('is-open');
-                
+                expandContent.removeAttribute('inert');
+
                 // Slight scroll to ensure content is visible
                 setTimeout(() => {
                     const y = expandTrigger.getBoundingClientRect().top + window.scrollY - 20;
@@ -44,6 +45,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 // Close
                 expandTrigger.setAttribute('aria-expanded', 'false');
                 expandContent.classList.remove('is-open');
+                expandContent.setAttribute('inert', '');
             }
         });
     }
@@ -97,23 +99,6 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         });
     }
-
-    // 5. SMOOTH SCROLLING
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener('click', function (e) {
-            e.preventDefault();
-            const targetId = this.getAttribute('href');
-            if(targetId === '#') return;
-            
-            const target = document.querySelector(targetId);
-            if (target) {
-                target.scrollIntoView({
-                    behavior: 'smooth',
-                    block: 'start'
-                });
-            }
-        });
-    });
 
     console.log("State-of-the-art systems loaded successfully.");
 });
