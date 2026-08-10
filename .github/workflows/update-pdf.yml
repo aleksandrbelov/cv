@@ -44,6 +44,7 @@ jobs:
           cp index.html _site/
           cp styles.css _site/
           cp script.js _site/
+          cp -r fonts _site/
           cp Oleksandr_Bielov_Resume.pdf _site/
 
       - name: Upload Pages artifact
