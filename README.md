@@ -47,7 +47,7 @@ Senior software engineer with 10+ years building distributed services, APIs, and
 ---
 ### **EPAM Systems — Software Engineer**
 2015–2018
-* **Delivered high-performance backend services** — built RESTful APIs and Spring microservices for enterprise clients (finance, telecom), handling daily requ  ests with optimized caching (Redis) and database performance (MariaDB).
+* **Delivered high-performance backend services** — built RESTful APIs and Spring microservices for enterprise clients (finance, telecom), handling high request volumes with optimized caching (Redis) and database performance (MariaDB).
 * **Improved team velocity and code quality** — led 3-person team through full SDLC, establishing code review practices, CI/CD automation (Jenkins, Gradle), and testing standards that reduced production defects and accelerated delivery cycles.
 * **Enabled business growth** — designed and shipped backend features for enterprise web applications, supporting new product capabilities and client onboarding.
 ---
