@@ -30,13 +30,13 @@ Senior software engineer with 10+ years building distributed services, APIs, and
 ### **Microsoft — Software Engineer**
 *Teams Call Recording, Transcription & Captioning* · Jun 2020 – Jul 2025
 **Tech Stack:** C#, .NET, Redis, Docker, Azure Kubernetes Service (AKS), Azure DevOps (YAML, Enterprise CI/CD).
-* **Enhanced product accessibility through transcription architecture improvements** — drove multi-phase initiative to modernize captioning capabilities, delivering features like server-side multilingual caption selection and improving inclusivity for international organizations.
-* **Accelerated release velocity and reduced risk** — transformed manual deployment processes into automated, one-click workflows, increasing release cadence by 3x while making production rollouts predictable.
-* **Maximized QA efficiency** — eliminated 75% of manual regression testing effort by introducing automated end-to-end validation across all deployment stages, freeing the team to focus on feature development.
-* **Reduced production incidents and improved reliability** — cut release-related outages by 60% through continuous automated testing integrated into CI/CD pipelines, catching regressions before they reached customers.
+* **Enhanced product accessibility through transcription architecture improvements** — drove multi-phase initiative to modernize captioning capabilities, delivering features like server-side multilingual caption selection and improving inclusivity for international teams.
+* **Accelerated release velocity and reduced risk** — transformed manual deployment processes into automated, one-click workflows, significantly increasing release cadence while making production rollouts predictable.
+* **Maximized QA efficiency** — eliminated the majority of manual regression testing effort by introducing automated end-to-end validation across all deployment stages, freeing the team to focus on feature development.
+* **Reduced production incidents and improved reliability** — cut release-related outages through continuous automated testing integrated into CI/CD pipelines, catching regressions before they reached customers.
 * **Improved infrastructure resilience** — contributed to the cloud-native platform migration (Kubernetes/AKS), simplifying large-scale deployments and ensuring high availability across multiple regions.
 
-**Key Achievement:** This automation initiative was a primary driver for my promotion and established the foundational infrastructure now used by the entire Teams recording organization.
+**Key Achievement:** This automation initiative was a primary driver for my promotion and established the foundational infrastructure now used by the entire Teams recording team.
 ---
 ### **Nuvo Group Ltd. — Senior Software Engineer**
 2018–2020
