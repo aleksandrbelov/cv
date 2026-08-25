@@ -28,7 +28,7 @@ Senior software engineer with 10+ years building distributed services, APIs, and
 📄 [Full technical detail → AI_ML_PROJECTS.md](AI_ML_PROJECTS.md)
 ---
 ### **Microsoft — Software Engineer**
-*Teams Call Recording, Transcription & Captioning* · 2020–2025 
+*Teams Call Recording, Transcription & Captioning* · Jun 2020 – Jul 2025
 **Tech Stack:** C#, .NET, Redis, Docker, Azure Kubernetes Service (AKS), Azure DevOps (YAML, Enterprise CI/CD).
 * **Enhanced product accessibility through transcription architecture improvements** — drove multi-phase initiative to modernize captioning capabilities, delivering features like server-side multilingual caption selection and improving inclusivity for international organizations.
 * **Accelerated release velocity and reduced risk** — transformed manual deployment processes into automated, one-click workflows, increasing release cadence by 3x while making production rollouts predictable.
@@ -39,7 +39,7 @@ Senior software engineer with 10+ years building distributed services, APIs, and
 **Key Achievement:** This automation initiative was a primary driver for my promotion and established the foundational infrastructure now used by the entire Teams recording organization.
 ---
 ### **Nuvo Group Ltd. — Senior Software Engineer**
-2018–2019
+2018–2020
 *Nuvo develops wearable sensor-based technologies using big data analytics to help parents monitor pregnancy.*
 * **Improved data reliability and enabled real-time analytics** — built streaming data pipeline (Kafka, Cassandra, Redis) processing telemetry from wearable devices with sub-second latency, increasing data delivery reliability.
 * **Accelerated feature development** — designed messaging infrastructure for real-time analytics and anomaly detection, enabling product team to ship health monitoring features faster without backend bottlenecks.
@@ -47,7 +47,7 @@ Senior software engineer with 10+ years building distributed services, APIs, and
 ---
 ### **EPAM Systems — Software Engineer**
 2015–2018
-* **Delivered high-performance backend services** — built RESTful APIs and Spring microservices for enterprise clients (finance, telecom), handling 10M+ daily requests with optimized caching (Redis) and database performance (MariaDB).
+* **Delivered high-performance backend services** — built RESTful APIs and Spring microservices for enterprise clients (finance, telecom), handling daily requ  ests with optimized caching (Redis) and database performance (MariaDB).
 * **Improved team velocity and code quality** — led 3-person team through full SDLC, establishing code review practices, CI/CD automation (Jenkins, Gradle), and testing standards that reduced production defects and accelerated delivery cycles.
 * **Enabled business growth** — designed and shipped backend features for enterprise web applications, supporting new product capabilities and client onboarding.
 ---
