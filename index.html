@@ -183,9 +183,8 @@
                                             from PDF/DOCX, parses it into structured fields with an LLM and indexes it;
                                             run on demand via CLI or a one-shot container.</li>
                                         <li><strong>Made search understand recruiter intent</strong> — an LLM
-                                            expands each query into three semantic variants, normalising non-English
-                                            input into English before embedding, and extracts hard filters like
-                                            experience range; results are deduplicated by best score, with automatic
+                                            expands each query into three semantic variants and extracts hard filters
+                                            like experience range; results are deduplicated by best score, with automatic
                                             retry without filters when the LLM’s constraints return nothing.</li>
                                         <li><strong>Built hybrid retrieval in Pinecone</strong> — dense embeddings
                                             and BM25 sparse vectors in a single query, combined through weighted
