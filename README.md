@@ -47,9 +47,11 @@ Senior software engineer with 10+ years building distributed services, APIs, and
 ---
 ### **EPAM Systems — Software Engineer**
 2015–2018
-* **Delivered high-performance backend services** — built RESTful APIs and Spring microservices for enterprise clients (finance, telecom), handling high request volumes with optimized caching (Redis) and database performance (MariaDB).
-* **Improved team velocity and code quality** — led 3-person team through full SDLC, establishing code review practices, CI/CD automation (Jenkins, Gradle), and testing standards that reduced production defects and accelerated delivery cycles.
-* **Enabled business growth** — designed and shipped backend features for enterprise web applications, supporting new product capabilities and client onboarding.
+**Tech Stack:** Java 8, Spring (MVC, Data, Security), Hibernate, MariaDB, Gradle, Tomcat
+* Rebuilt a warehouse and retail service for Canadian Tire, migrating it from a legacy IBM platform to Java/Spring
+* Coordinated a cross-functional squad (developers, BA, QA) through the full delivery cycle
+* Established code review practices and unit/integration testing standards
+* Delivered backend services and supporting front-end work for enterprise clients
 ---
 ### **LLC "Astelit" (Lifecell) — Junior Software Engineer**
 2013–2015
