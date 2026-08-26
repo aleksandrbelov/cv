@@ -39,11 +39,11 @@ Senior software engineer with 10+ years building distributed services, APIs, and
 **Key Achievement:** This automation initiative was a primary driver for my promotion and established the foundational infrastructure now used by the entire Teams recording team.
 ---
 ### **Nuvo Group Ltd. — Senior Software Engineer**
-2018–2020
-*Nuvo develops wearable sensor-based technologies using big data analytics to help parents monitor pregnancy.*
-* **Improved data reliability and enabled real-time analytics** — built streaming data pipeline (Kafka, Cassandra, Redis) processing telemetry from wearable devices with sub-second latency, increasing data delivery reliability.
-* **Accelerated feature development** — designed messaging infrastructure for real-time analytics and anomaly detection, enabling product team to ship health monitoring features faster without backend bottlenecks.
-* **Ensured platform scalability** — collaborated with R&D and cloud engineers to deliver AWS-based infrastructure improvements, supporting rapid user growth and maintaining SLA during traffic spikes.
+2018–2019
+*Wearable sensor technology for pregnancy monitoring.*
+**Tech Stack:** Java 8, Spring Boot, Kafka, Kafka Streams, MQTT, Docker, AWS
+* Built the messaging layer that replaced HTTP calls between microservices with Kafka request-response — a library services imported to communicate without direct coupling
+* Contributed to the telemetry pipeline: MQTT ingestion → Kafka Streams → Cassandra → processing service for sensor data from the wearable belt
 ---
 ### **EPAM Systems — Software Engineer**
 2015–2018
