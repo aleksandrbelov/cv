@@ -21,9 +21,10 @@ Senior software engineer with 10+ years building distributed services, APIs, and
 ---
 *MatchCV — AI-Powered Candidate Search System* · 2025–2026
 **Tech Stack:** Python, FastAPI, OpenAI API, Pinecone, ClickUp API, Docker, Heroku
-* **Turned raw CVs into a searchable talent database** — built a backend pipeline that automatically extracts text from resumes attached to ClickUp tasks, allowing recruiters to discover candidates via natural language chat instead of manual file review.
-* **Made search understand recruiter intent** — implemented an LLM module that translates plain-language queries (in any language) into multi-angle semantic searches, while extracting hard filters like experience range to guarantee rigid criteria are met.
-* **Ensured top candidate visibility via re-ranking** — added an LLM acting as a second-stage judge to score candidates against the original request, catching strong conceptual matches that basic similarity search would bury.
+* **Turned raw CVs into a searchable talent database** — batch ingestion pipeline that pulls ClickUp tasks with attachments, extracts text from PDF/DOCX, parses it into structured fields with an LLM and indexes it; run on demand via CLI or a one-shot container.
+* **Made search understand recruiter intent** — an LLM expands each query into three semantic variants, normalising non-English input into English before embedding, and extracts hard filters like experience range; results are deduplicated by best score, with automatic retry without filters when the LLM's constraints return nothing.
+* **Built hybrid retrieval in Pinecone** — dense embeddings and BM25 sparse vectors in a single query, combined through weighted dot-product scoring; dense catches paraphrasing, BM25 catches exact tokens like framework names and certifications.
+* **Ensured top candidate visibility via re-ranking** — added an LLM acting as a second-stage judge to score candidates against the original request, catching strong conceptual matches that basic similarity search would bury; falls back to vector scores if the reranker fails or returns invalid JSON.
 
 📄 [Full technical detail → AI_ML_PROJECTS.md](AI_ML_PROJECTS.md)
 ---
