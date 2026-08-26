@@ -15,9 +15,9 @@ Senior software engineer with 10+ years building distributed services, APIs, and
 ### **Freelance — AI Engineer**
 *AI-Powered Professional Matchmaking Platform* · 2025–2026  
 **Tech Stack:** Python, OpenAI API, Pinecone, Slack Bolt, Supabase, Docker, Heroku
-* **Replaced manual networking with instant Slack matchmaking** — built a bot where users describe their ideal connection in plain language (e.g. founders, investors). A backend reasoning model actively rewrites each query, bridging the gap between conversational requests and structured profile data while enabling built-in multilingual support.
-* **Automated continuous CRM profile enrichment** — engineered an async background pipeline that analyzes live LinkedIn activity. This ensures professional matches are based on current actions rather than stale directory data.
-* **Architected model-specific optimization** — implemented a dual-model system routing high-speed conversational queries to lightweight LLMs, while dedicating heavier reasoning models to deep background profile processing.
+* **Slack-native semantic search over a professional network** — users describe the connection they need in plain language; a reasoning model rewrites the request into a retrieval-optimised query, normalising non-English input to English before embedding. Profiles are chunked at sentence boundaries with per-chunk vectors and server-side metadata filters.
+* **Model-agnostic LLM service layer** — adapts request construction per model family (developer role, `max_completion_tokens`, no temperature for reasoning models), making the model swappable through config, including self-hosted OpenAI-compatible endpoints. Client-side throttling against a tokens-per-minute budget, batched concurrent summarisation, exponential backoff on rate limits.
+* **On-demand LinkedIn enrichment from Slack** — an LLM distils contacts' recent posts and profile text into a matching-oriented summary, fanned out to Supabase, the CRM and the vector index; a freshness window skips recently-enriched contacts to cut redundant API spend.
 ---
 *MatchCV — AI-Powered Candidate Search System* · 2025–2026
 **Tech Stack:** Python, FastAPI, OpenAI API, Pinecone, ClickUp API, Docker, Heroku

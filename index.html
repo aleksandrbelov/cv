@@ -148,24 +148,23 @@
                                             Bolt</span><span>Supabase</span><span>Docker</span><span>Heroku</span>
                                     </div>
                                     <ul class="achievement-list" style="margin-bottom: 2rem;">
-                                        <li><strong>Replaced manual networking with instant Slack matchmaking</strong> —
-                                            built a bot
-                                            where users describe their ideal connection in plain language (e.g.
-                                            founders, investors). A backend
-                                            reasoning model
-                                            actively rewrites each query, bridging the gap between conversational
-                                            requests and
-                                            structured profile data while enabling built-in multilingual support.</li>
-                                        <li><strong>Automated continuous CRM profile enrichment</strong> — engineered an
-                                            async
-                                            background pipeline that analyzes live LinkedIn activity. This ensures
-                                            professional
-                                            matches are based on current actions rather than stale directory data.</li>
-                                        <li><strong>Architected model-specific optimization</strong> — implemented a
-                                            dual-model
-                                            system routing high-speed conversational queries to lightweight LLMs, while
-                                            dedicating
-                                            heavier reasoning models to deep background profile processing.</li>
+                                        <li><strong>Slack-native semantic search over a professional network</strong> —
+                                            users describe the connection they need in plain language; a reasoning model
+                                            rewrites the request into a retrieval-optimised query, normalising
+                                            non-English input to English before embedding. Profiles are chunked at
+                                            sentence boundaries with per-chunk vectors and server-side metadata
+                                            filters.</li>
+                                        <li><strong>Model-agnostic LLM service layer</strong> — adapts request
+                                            construction per model family (developer role,
+                                            <code>max_completion_tokens</code>, no temperature for reasoning models),
+                                            making the model swappable through config, including self-hosted
+                                            OpenAI-compatible endpoints. Client-side throttling against a
+                                            tokens-per-minute budget, batched concurrent summarisation, exponential
+                                            backoff on rate limits.</li>
+                                        <li><strong>On-demand LinkedIn enrichment from Slack</strong> — an LLM distils
+                                            contacts' recent posts and profile text into a matching-oriented summary,
+                                            fanned out to Supabase, the CRM and the vector index; a freshness window
+                                            skips recently-enriched contacts to cut redundant API spend.</li>
                                     </ul>
                                 </div>
 
