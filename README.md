@@ -13,7 +13,8 @@ Senior software engineer with 10+ years building distributed services, APIs, and
 ---
 ## EXPERIENCE
 ### **Freelance — AI Engineer**
-*AI-Powered Professional Matchmaking Platform* · 2025–2026  
+Jul 2025 – Present
+*AI-Powered Professional Matchmaking Platform* · 
 **Tech Stack:** Python, OpenAI API, Pinecone, Slack Bolt, Supabase, Docker, Heroku
 * **Slack-native semantic search over a professional network** — users describe the connection they need in plain language; a reasoning model rewrites the request into a retrieval-optimised query, normalising non-English input to English before embedding. Profiles are chunked at sentence boundaries with per-chunk vectors and server-side metadata filters.
 * **Model-agnostic LLM service layer** — adapts request construction per model family (developer role, `max_completion_tokens`, no temperature for reasoning models), making the model swappable through config, including self-hosted OpenAI-compatible endpoints. Client-side throttling against a tokens-per-minute budget, batched concurrent summarisation, exponential backoff on rate limits.
@@ -29,7 +30,8 @@ Senior software engineer with 10+ years building distributed services, APIs, and
 📄 [Full technical detail → AI_ML_PROJECTS.md](AI_ML_PROJECTS.md)
 ---
 ### **Microsoft — Software Engineer**
-*Teams Call Recording, Transcription & Captioning* · Jun 2020 – Jul 2025
+Jun 2020 – Jul 2025
+*Teams Call Recording, Transcription & Captioning*
 **Tech Stack:** C#, .NET, Redis, Docker, Kubernetes, Azure DevOps (YAML, Enterprise CI/CD).
 * **Enhanced product accessibility through transcription architecture improvements** — drove multi-phase initiative to modernize captioning capabilities, delivering features like server-side multilingual caption selection and improving inclusivity for international teams.
 * **Accelerated release velocity and reduced risk** — transformed manual deployment processes into automated, one-click workflows, significantly increasing release cadence while making production rollouts predictable.
@@ -40,14 +42,14 @@ Senior software engineer with 10+ years building distributed services, APIs, and
 **Key Achievement:** This automation initiative was a primary driver for my promotion and established the foundational infrastructure now used by the entire Teams recording team.
 ---
 ### **Nuvo Group Ltd. — Senior Software Engineer**
-2018–2019
+May 2018 – Dec 2019
 *Wearable sensor technology for pregnancy monitoring.*
 **Tech Stack:** Java 8, Spring Boot, Kafka, Kafka Streams, MQTT, Docker, AWS
 * Built the messaging layer that replaced HTTP calls between microservices with Kafka request-response — a library services imported to communicate without direct coupling
 * Contributed to the telemetry pipeline: MQTT ingestion → Kafka Streams → Cassandra → processing service for sensor data from the wearable belt
 ---
 ### **EPAM Systems — Software Engineer**
-2015–2018
+Oct 2015 – Feb 2018
 **Tech Stack:** Java 8, Spring (MVC, Data, Security), Hibernate, MariaDB, Gradle, Tomcat
 * Rebuilt a warehouse and retail service for Canadian Tire, migrating it from a legacy IBM platform to Java/Spring
 * Coordinated a cross-functional squad (developers, BA, QA) through the full delivery cycle
@@ -55,7 +57,7 @@ Senior software engineer with 10+ years building distributed services, APIs, and
 * Delivered backend services and supporting front-end work for enterprise clients
 ---
 ### **LLC "Astelit" (Lifecell) — Junior Software Engineer**
-2013–2015
+Sep 2013 – Oct 2015
 * Customized Oracle Maximo applications (Java, JSP, PL/SQL), supported production systems, and provided application monitoring and user support.
 ---
 ## EDUCATION
