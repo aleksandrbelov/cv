@@ -741,8 +741,8 @@ h1, h2, h3, h4, h5, h6 {
     body {
         background: white !important;
         color: #111 !important;
-        font-size: 8.9pt !important;
-        line-height: 1.28 !important;
+        font-size: 8.5pt !important;
+        line-height: 1.22 !important;
     }
 
     .bg-mesh, .bg-noise, #pointer-glow, .footer-glow,
@@ -804,15 +804,15 @@ h1, h2, h3, h4, h5, h6 {
         border: none !important;
         border-bottom: 1px solid #ddd !important;
         border-radius: 0 !important;
-        padding: 0.45rem 0 !important;
-        margin-bottom: 0.25rem !important;
+        padding: 0.3rem 0 !important;
+        margin-bottom: 0.15rem !important;
         break-inside: auto !important;
     }
 
     /* Tighten spacing heavily to fit Freelance on page 1 */
     .bento-hero {
-        margin-bottom: 0.25rem !important;
-        padding-bottom: 0.1rem !important;
+        margin-bottom: 0.1rem !important;
+        padding-bottom: 0 !important;
     }
 
     .availability-badge {
@@ -820,11 +820,11 @@ h1, h2, h3, h4, h5, h6 {
     }
 
     .section {
-        margin-top: 0.5rem !important;
+        margin-top: 0.3rem !important;
     }
 
     .experience-section {
-        margin-top: 0.5rem !important;
+        margin-top: 0.3rem !important;
     }
 
     .section-title {
@@ -838,7 +838,7 @@ h1, h2, h3, h4, h5, h6 {
     }
 
     .achievement-list li {
-        margin-bottom: 0.12rem !important;
+        margin-bottom: 0.05rem !important;
         padding-left: 1rem !important;
     }
 
@@ -848,7 +848,7 @@ h1, h2, h3, h4, h5, h6 {
 
     /* Timeline */
     .timeline {
-        gap: 0.5rem !important;
+        gap: 0.3rem !important;
     }
 
     .timeline::before {
@@ -858,6 +858,8 @@ h1, h2, h3, h4, h5, h6 {
     .timeline-item {
         margin-left: 0 !important;
         padding-left: 0 !important;
+        break-inside: avoid !important;
+        page-break-inside: avoid !important;
     }
 
     .timeline-node {
@@ -932,7 +934,7 @@ h1, h2, h3, h4, h5, h6 {
     }
 
     .project-block {
-        margin-bottom: 0.35rem !important;
+        margin-bottom: 0.15rem !important;
         break-inside: auto !important;
         page-break-inside: auto !important;
     }
@@ -962,9 +964,13 @@ h1, h2, h3, h4, h5, h6 {
     }
 
     /* Summary */
+    .bento-summary {
+        margin-bottom: 0.1rem !important;
+    }
+
     .summary-text {
-        font-size: 0.82rem !important;
-        line-height: 1.42 !important;
+        font-size: 0.78rem !important;
+        line-height: 1.35 !important;
     }
 
     /* Page-break logic to keep related items together */
