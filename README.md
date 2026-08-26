@@ -8,8 +8,8 @@ Senior software engineer with 10+ years building distributed services, APIs, and
 ## SKILLS
 **Languages & Frameworks:** C# (.NET Core/Framework), Java (Spring Boot, Kafka Streams), Python, FastAPI, Slack Bolt, SQL  
 **AI/ML Ecosystem:** OpenAI API, Pinecone, RAG pipeline design, Hybrid vector search (dense + sparse/BM25), Multi-query retrieval, LLM reranking, Reasoning model integration, Async AI orchestration  
-**Cloud & DevOps:** Azure Kubernetes Service (AKS), Docker, Heroku, Azure DevOps, CI/CD automation  
-**Data & Messaging:** Kafka, Cassandra, Redis, Supabase, MariaDB & MySQL
+**Cloud & DevOps:** Kubernetes, Docker, Heroku, Azure DevOps, CI/CD automation  
+**Data & Messaging:** Kafka, Redis, Supabase, MariaDB & MySQL
 ---
 ## EXPERIENCE
 ### **Freelance — AI Engineer**
@@ -29,12 +29,12 @@ Senior software engineer with 10+ years building distributed services, APIs, and
 ---
 ### **Microsoft — Software Engineer**
 *Teams Call Recording, Transcription & Captioning* · Jun 2020 – Jul 2025
-**Tech Stack:** C#, .NET, Redis, Docker, Azure Kubernetes Service (AKS), Azure DevOps (YAML, Enterprise CI/CD).
+**Tech Stack:** C#, .NET, Redis, Docker, Kubernetes, Azure DevOps (YAML, Enterprise CI/CD).
 * **Enhanced product accessibility through transcription architecture improvements** — drove multi-phase initiative to modernize captioning capabilities, delivering features like server-side multilingual caption selection and improving inclusivity for international teams.
 * **Accelerated release velocity and reduced risk** — transformed manual deployment processes into automated, one-click workflows, significantly increasing release cadence while making production rollouts predictable.
 * **Maximized QA efficiency** — eliminated the majority of manual regression testing effort by introducing automated end-to-end validation across all deployment stages, freeing the team to focus on feature development.
 * **Reduced production incidents and improved reliability** — cut release-related outages through continuous automated testing integrated into CI/CD pipelines, catching regressions before they reached customers.
-* **Improved infrastructure resilience** — contributed to the cloud-native platform migration (Kubernetes/AKS), simplifying large-scale deployments and ensuring high availability across multiple regions.
+* **Platform migration** — moved a service to Microsoft's internal Kubernetes platform during the company-wide RDFE shutdown; manifests, StatefulSet configuration for indexed replicas, on-call for incidents after the move
 
 **Key Achievement:** This automation initiative was a primary driver for my promotion and established the foundational infrastructure now used by the entire Teams recording team.
 ---
