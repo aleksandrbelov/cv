@@ -3,7 +3,8 @@
 📧 obielovswe@gmail.com | 🐙 [GitHub](github.com/aleksandrbelov)
 ---
 ## SUMMARY
-Senior software engineer with 10+ years building distributed services, APIs, and platform automation at Microsoft, Nuvo, and EPAM. Recently shipped production AI systems, including RAG search and candidate-matching workflows. Strong track record with C#/.NET, Java, Python, cloud infrastructure, and CI/CD automation.
+Senior software engineer with 10+ years building distributed services and platform automation — five of them at Microsoft on Teams call recording and transcription.
+Recently shipped production AI systems: semantic search over CVs and professional profiles, with hybrid retrieval and LLM re-ranking. Strong track record with C#/.NET, Java/Spring, Python/FastAPI, Kafka and Kubernetes.
 ---
 ## SKILLS
 **Languages & Frameworks:** C# (.NET Core/Framework), Java (Spring Boot, Kafka Streams), Python, FastAPI, Slack Bolt, SQL  
