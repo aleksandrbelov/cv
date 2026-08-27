@@ -53,7 +53,6 @@ Oct 2015 – Feb 2018
 **Tech Stack:** Java 8, Spring (MVC, Data, Security), Hibernate, MariaDB, Gradle, Tomcat
 * Rebuilt a warehouse and retail service for Canadian Tire, migrating it from a legacy IBM platform to Java/Spring
 * Coordinated a cross-functional squad (developers, BA, QA) through the full delivery cycle
-* Established code review practices and unit/integration testing standards
 * Delivered backend services and supporting front-end work for enterprise clients
 ---
 ### **LLC "Astelit" (Lifecell) — Junior Software Engineer**
