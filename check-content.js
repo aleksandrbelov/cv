@@ -91,10 +91,11 @@ async function readHtml(htmlPath) {
       const text = (el) => (el ? el.innerText.replace(/\s+/g, ' ').trim() : '');
       const all = (sel, root = document) => [...root.querySelectorAll(sel)].map(text);
       const accordion = new Set(all('.expand-inner li'));
+      const allLis = [...document.querySelectorAll('.timeline-item li')];
       return {
         summary: text(document.querySelector('.summary-text')),
         // Bullets outside the accordion mirror README; accordion mirrors AI_ML_PROJECTS.
-        mainBullets: all('.timeline-item li').filter((t) => !accordion.has(t)),
+        mainBullets: allLis.filter((el) => !el.closest('.expand-inner')).map(text),
         accordionBullets: [...accordion],
         chips: all('.tech-stack-mini span'),
         dates: all('.date-badge'),
