@@ -3,8 +3,8 @@
 📧 obielovswe@gmail.com | 🐙 [GitHub](https://github.com/aleksandrbelov)
 ---
 ## SUMMARY
-Senior software engineer with 10+ years building distributed services and platform automation — five of them at Microsoft on Teams call recording and transcription.
-Recently shipped production AI systems: semantic search over CVs and professional profiles, with hybrid retrieval and LLM re-ranking. Strong track record with C#/.NET, Java/Spring, Python/FastAPI, Kafka and Kubernetes.
+Senior software engineer with 12+ years in backend and distributed systems. Spent five years at Microsoft building and running a real-time media platform — Teams meeting recording and transcription — on tens of thousands of cores across commercial and government clouds.
+Now shipping production LLM systems: semantic search with hybrid retrieval and LLM re-ranking. Core stack: C#/.NET, Java/Spring, Python/FastAPI, Kafka, Kubernetes, Azure.
 ---
 ## SKILLS
 **Languages & Frameworks:** C# (.NET Core/Framework), Java (Spring Boot, Kafka Streams), Python, FastAPI, Slack Bolt, SQL  
