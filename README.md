@@ -15,13 +15,13 @@ Recently shipped production AI systems: semantic search over CVs and professiona
 ## EXPERIENCE
 ### **Independent — Backend & AI Engineer**
 Jul 2025 – Present
-*AI-Powered Professional Matchmaking Platform* · 
+*AI-Powered Professional Matchmaking Platform*
 **Tech Stack:** Python, OpenAI API, Pinecone, Slack Bolt, Supabase, Docker, Heroku
 * **Slack-native semantic search over a professional network** — users describe the connection they need in plain language; a reasoning model rewrites the request into a retrieval-optimised query, normalising non-English input to English before embedding. Profiles are chunked at sentence boundaries with per-chunk vectors and server-side metadata filters.
 * **Model-agnostic LLM service layer** — adapts request construction per model family (developer role, `max_completion_tokens`, no temperature for reasoning models), making the model swappable through config, including self-hosted OpenAI-compatible endpoints. Client-side throttling against a tokens-per-minute budget, batched concurrent summarisation, exponential backoff on rate limits.
 * **On-demand LinkedIn enrichment from Slack** — an LLM distils contacts' recent posts and profile text into a matching-oriented summary, fanned out to Supabase, the CRM and the vector index; a freshness window skips recently-enriched contacts to cut redundant API spend.
 ---
-*MatchCV — AI-Powered Candidate Search System* · 
+*MatchCV — AI-Powered Candidate Search System*
 **Tech Stack:** Python, FastAPI, OpenAI API, Pinecone, ClickUp API, Docker, Heroku
 * **Turned raw CVs into a searchable talent database** — batch ingestion pipeline that pulls ClickUp tasks with attachments, extracts text from PDF/DOCX, parses it into structured fields with an LLM and indexes it; run on demand via CLI or a one-shot container.
 * **Made search understand recruiter intent** — an LLM expands each query into three semantic variants and extracts hard filters like experience range; results are deduplicated by best score, with automatic retry without filters when the LLM's constraints return nothing.
