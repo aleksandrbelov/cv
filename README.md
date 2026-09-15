@@ -1,6 +1,6 @@
 # OLEKSANDR BIELOV
-**Senior Software Engineer | AI/ML Systems** | Remote (EU timezone)
-📧 obielovswe@gmail.com | 🐙 [GitHub](github.com/aleksandrbelov)
+**Senior Software Engineer | AI/ML Systems** | Helsinki, Finland · Open to on-site, hybrid, and remote (EU)
+📧 obielovswe@gmail.com | 🐙 [GitHub](https://github.com/aleksandrbelov)
 ---
 ## SUMMARY
 Senior software engineer with 10+ years building distributed services and platform automation — five of them at Microsoft on Teams call recording and transcription.
