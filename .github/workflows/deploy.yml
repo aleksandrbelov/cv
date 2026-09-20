@@ -49,6 +49,9 @@ jobs:
       - name: Generate PDF
         run: npm run pdf
 
+      - name: Generate DOCX
+        run: npm run docx
+
       - name: Prepare site artifact
         run: |
           mkdir _site
@@ -57,6 +60,7 @@ jobs:
           cp script.js _site/
           cp -r fonts _site/
           cp Oleksandr_Bielov_Resume.pdf _site/
+          cp Oleksandr_Bielov_Resume.docx _site/
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3

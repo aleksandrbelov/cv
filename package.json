@@ -6,9 +6,11 @@
   "scripts": {
     "check": "node check-content.js",
     "pdf": "node generate-pdf.js",
-    "build": "npm run check && npm run pdf"
+    "docx": "node generate-docx.js",
+    "build": "npm run check && npm run pdf && npm run docx"
   },
   "devDependencies": {
+    "docx": "^9.7.1",
     "puppeteer": "^24.41.0"
   }
 }

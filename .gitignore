@@ -1,9 +1,10 @@
 node_modules/
 .env
 
-# Generated PDF
+# Generated PDF / DOCX (also covers Word's ~$ lock files)
 Oleksandr_Bielov_Resume.pdf
 *.pdf
+*.docx
 
 # OS generated files
 .DS_Store
