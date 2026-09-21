@@ -9,7 +9,7 @@ obielovswe@gmail.com · linkedin.com/in/oleksandr-bielov-07743b79 · github.com/
 
 ## Summary
 
-Senior software engineer with 10+ years in backend and distributed systems. Five years at Microsoft on the Teams real-time media platform — call recording, transcription and captioning — running on tens of thousands of cores per release across commercial and government (sovereign) clouds. Owned services end to end: design, platform migration, production on-call. Shipped production LLM systems: candidate-search and investor-startup matching systems. Primary stack C#/.NET and Java/Spring; Python for recent retrieval and LLM work.
+Senior software engineer with 13+ years in backend and distributed systems. Five years at Microsoft on the Teams real-time media platform — call recording, transcription and captioning — running on tens of thousands of cores per release across commercial and government (sovereign) clouds. Owned services end to end: design, platform migration, production on-call. Shipped production LLM systems: candidate-search and investor-startup matching systems. Primary stack C#/.NET and Java/Spring; Python for recent retrieval and LLM work.
 
 ---
 
