@@ -3,7 +3,7 @@
 📧 obielovswe@gmail.com | 💼 [LinkedIn](https://linkedin.com/in/oleksandr-bielov-07743b79) | 🐙 [GitHub](https://github.com/aleksandrbelov)
 ---
 ## SUMMARY
-Senior software engineer with 13+ years in backend and distributed systems. Five years at Microsoft on the Teams real-time media platform — call recording, transcription and captioning — running on tens of thousands of cores per release across commercial and government (sovereign) clouds. Owned services end to end: design, platform migration, production on-call. Shipped production LLM systems: candidate-search and investor-startup matching systems. Primary stack C#/.NET and Java/Spring; Python for recent retrieval and LLM work.
+Senior software engineer with 13+ years in backend and distributed systems. Five years at Microsoft on the Teams real-time media platform — call recording, transcription and captioning — running on tens of thousands of cores per release across commercial and government (sovereign) clouds. Owned services end to end: design, platform migration, production on-call. Shipped two production LLM retrieval systems: investor-startup matching and candidate search (MatchCV). Primary stack C#/.NET and Java/Spring; Python for recent retrieval and LLM work.
 ---
 ## SKILLS
 **Languages & Frameworks:** C# (.NET Core / .NET Framework), Java (Spring Framework), Python (FastAPI), SQL
@@ -28,7 +28,7 @@ Jun 2020 – Jul 2025
 ---
 ### **Independent Contractor — Backend & AI Engineer**
 Jul 2025 – Present
-*Two client projects: Slack-native people search, and a candidate search system (MatchCV)*
+*Two client projects: Slack-native investor-startup matching, and a candidate search system (MatchCV)*
 **Tech Stack:** Python, FastAPI, OpenAI API, Pinecone, Supabase, Slack Bolt, Docker, Heroku
 * Built two retrieval systems end to end and ran them in production — ingestion, sentence-boundary chunking, indexing, query serving and deployment as containers, driven from CLI and Slack entry points.
 * Designed a provider-agnostic service layer for model calls: per-family request construction behind a single interface, client-side throttling against a tokens-per-minute budget, batched concurrency and exponential backoff on rate limits. Swapping providers, including self-hosted OpenAI-compatible endpoints, is a config change.
