@@ -17,13 +17,13 @@ const {
 
 /**
  * Generates PDF and DOCX versions of the Backend-focused resume from
- * Oleksandr_Bielov_Resume_Backend_formatted.md.
+ * Oleksandr_Bielov_Resume_Backend.md.
  *
  * Re-uses the same DOCX builder logic as generate-docx.js (adapted to read
  * from a different source file) and renders a clean HTML page for the PDF.
  */
 
-const SOURCE_FILE = 'Oleksandr_Bielov_Resume_Backend_formatted.md';
+const SOURCE_FILE = 'Oleksandr_Bielov_Resume_Backend.md';
 const OUTPUT_DOCX = 'Oleksandr_Bielov_Resume_Backend.docx';
 const OUTPUT_PDF  = 'Oleksandr_Bielov_Resume_Backend.pdf';
 
@@ -388,6 +388,9 @@ function markdownToHtml(md) {
     } else if (/^###\s+/.test(trimmed)) {
       if (inList) { html += '</ul>\n'; inList = false; }
       html += `<h3>${fmt(trimmed.replace(/^###\s+/, ''))}</h3>\n`;
+    } else if (/^\*\*Tech Stack:\*\*/.test(trimmed)) {
+      if (inList) { html += '</ul>\n'; inList = false; }
+      html += `<p class="tech">${fmt(trimmed)}</p>\n`;
     } else if (/^\*\s+/.test(trimmed)) {
       if (!inList) { html += '<ul>\n'; inList = true; }
       html += `<li>${fmt(trimmed.replace(/^\*\s+/, ''))}</li>\n`;
@@ -443,6 +446,11 @@ function buildHtmlPage(md) {
   }
   p {
     margin-bottom: 3px;
+  }
+  p.tech {
+    font-size: 9pt;
+    color: #555;
+    margin-bottom: 4px;
   }
   hr {
     border: none;
