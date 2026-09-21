@@ -1,6 +1,6 @@
 # Oleksandr Bielov
 
-**Senior Software Engineer — Distributed Systems & Real-Time Platforms**
+**Senior Software Engineer**
 
 Helsinki, Finland · Open to on-site, hybrid and remote (EU)
 obielovswe@gmail.com · linkedin.com/in/oleksandr-bielov-07743b79 · github.com/aleksandrbelov
@@ -9,19 +9,16 @@ obielovswe@gmail.com · linkedin.com/in/oleksandr-bielov-07743b79 · github.com/
 
 ## Summary
 
-Backend engineer with 13 years in distributed systems. Five years at Microsoft on the Teams real-time media platform — call recording, transcription and captioning — running on tens of thousands of cores per release across commercial and government (sovereign) clouds. Owned services end to end: design, platform migration, production on-call. Primary stack C#/.NET and Java/Spring; Python for recent retrieval and LLM work.
+Senior software engineer with 10+ years in backend and distributed systems. Five years at Microsoft on the Teams real-time media platform — call recording, transcription and captioning — running on tens of thousands of cores per release across commercial and government (sovereign) clouds. Owned services end to end: design, platform migration, production on-call. Shipped production LLM systems: candidate-search and investor-startup matching systems. Primary stack C#/.NET and Java/Spring; Python for recent retrieval and LLM work.
 
 ---
 
 ## Skills
 
-**Primary languages:** C# (.NET Core / .NET Framework), Java (Spring Boot, Kafka Streams)
-**Also:** Python (FastAPI), SQL
-
-**Distributed systems:** Kafka, event-driven services, stateful services, multi-cloud deployment, production on-call
-**Platform & infrastructure:** Kubernetes, Docker, Azure, Azure DevOps, CI/CD
-**Data & storage:** PostgreSQL, Cassandra, Redis, MySQL / MariaDB, Supabase
-**Retrieval & LLM systems:** RAG pipeline design, hybrid dense + BM25 retrieval, LLM re-ranking, OpenAI API, Pinecone
+**Languages & Frameworks:** C# (.NET Core / .NET Framework), Java (Spring Framework), Python (FastAPI), SQL
+**Platform & Infrastructure:** Kubernetes, Docker, Azure, Azure DevOps, CI/CD
+**Data & Messaging:** PostgreSQL, Kafka, Cassandra, Redis, MySQL / MariaDB, Supabase
+**Retrieval & LLM Systems:** RAG, hybrid dense + BM25 retrieval, LLM re-ranking, OpenAI API, Pinecone
 
 ---
 
@@ -32,12 +29,12 @@ Backend engineer with 13 years in distributed systems. Five years at Microsoft o
 
 Real-time media platform that records, transcribes and captions Teams meetings, deployed on tens of thousands of cores per release across commercial and US government clouds (GCC, GCC High, DoD).
 
-- Owned services in the recording and transcription pipeline end to end — design, rollout, production on-call and incident response — across commercial and government clouds, where compliance restricts telemetry and direct access to production.
-- Migrated the stateful recording service off classic Azure infrastructure onto Microsoft's internal Kubernetes platform across four environments, carrying the cutover into the government clouds without interrupting service.
-- Led the move from a manual multi-step release process to one-click automated deployments gated by an automated health check, taking the team from monthly to weekly releases and leaving the deployment foundation the recording team still uses.
-- Owned synthetic monitoring and release gating: built a suite that exercises the live service with real meeting recordings and transcriptions, blocking broken builds in the release pipeline and running continuously in production, cutting detection time and removing the team's manual testing.
-- Drove a multi-phase initiative to modernise the transcription and captioning architecture, delivering spoken-language transcription and splitting recognition from session management underneath.
-- Root-caused failures that crossed service boundaries, including recording exports hanging for hours because a partner service misreported an unrecoverable error as retryable.
+- **Transcription Architecture & Service Ownership:** Drove a multi-phase initiative to modernise the transcription architecture, delivering spoken-language features. Owned services from design to production on-call in highly restricted compliance environments.
+- **Automated CI/CD & Release Velocity:** Led the move from a manual multi-step release process to one-click automated deployments gated by health checks. This accelerated release cadence from monthly to weekly and established the foundation still used by the team.
+- **Synthetic Monitoring & Release Gating:** Built a suite that exercises the live service with real meeting recordings and transcriptions. This continuous production validation blocked broken builds and eliminated manual testing; together with the release automation, it drove my 2023 promotion.
+- **Kubernetes Migration:** Migrated the stateful recording service off classic Azure infrastructure onto Microsoft's internal Kubernetes platform across four environments, carrying the cutover into government clouds without service interruption.
+- **Cross-Boundary Troubleshooting:** Root-caused distributed failures, including resolving hours-long recording export hangs caused by a partner service misreporting unrecoverable errors as retryable.
+
 
 ### Independent Contractor — Backend & AI Engineer
 **Jul 2025 – Present · Two client projects: Slack-native people search, and a candidate search system (MatchCV)**
