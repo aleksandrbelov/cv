@@ -3,7 +3,7 @@
 📧 obielovswe@gmail.com | 💼 [LinkedIn](https://linkedin.com/in/oleksandr-bielov-07743b79) | 🐙 [GitHub](https://github.com/aleksandrbelov)
 ---
 ## SUMMARY
-Senior software engineer with 12+ years in backend and distributed systems. Spent five years at Microsoft building and running a real-time media platform — Teams meeting recording and transcription — on tens of thousands of cores across commercial and government clouds.
+Senior software engineer with 10+ years in backend and distributed systems. Spent five years at Microsoft building and running a real-time media platform — Teams meeting recording and transcription — on tens of thousands of cores across commercial and government clouds.
 Now shipping production LLM systems: semantic search with hybrid retrieval and LLM re-ranking. Core stack: C#/.NET, Java/Spring, Python/FastAPI, Kafka, Kubernetes, Azure.
 ---
 ## SKILLS
