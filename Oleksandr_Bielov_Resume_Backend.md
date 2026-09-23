@@ -1,5 +1,5 @@
 # OLEKSANDR BIELOV
-**Senior Software Engineer** | Tallinn, Estonia · Open to on-site, hybrid and remote (EU)
+**Senior Software Engineer | Backend & Distributed Systems** | Tallinn, Estonia · Open to on-site, hybrid and remote (EU)
 📧 obielovswe@gmail.com | 💼 [LinkedIn](https://linkedin.com/in/oleksandr-bielov-07743b79) | 🐙 [GitHub](https://github.com/aleksandrbelov)
 ---
 ## SUMMARY
