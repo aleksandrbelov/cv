@@ -13,8 +13,8 @@ Now shipping production LLM systems: semantic search with hybrid retrieval and L
 **Data & Messaging:** Kafka, Redis, Supabase, MariaDB & MySQL
 ---
 ## EXPERIENCE
-### **Independent — Backend & AI Engineer**
-Jul 2025 – Present
+### **OpsLab — AI Developer Consultant**
+Jul 2025 – Present · London, UK (Remote)
 *AI-Powered Professional Matchmaking Platform*
 **Tech Stack:** Python, OpenAI API, Pinecone, Slack Bolt, Supabase, Docker, Heroku
 * **Slack-native semantic search over a professional network** — users describe the connection they need in plain language; a reasoning model rewrites the request into a retrieval-optimised query, normalising non-English input to English before embedding. Profiles are chunked at sentence boundaries with per-chunk vectors and server-side metadata filters.

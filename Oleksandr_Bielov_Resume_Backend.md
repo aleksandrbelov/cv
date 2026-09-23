@@ -1,5 +1,5 @@
 # OLEKSANDR BIELOV
-**Senior Software Engineer** | Helsinki, Finland · Open to on-site, hybrid and remote (EU)
+**Senior Software Engineer** | Tallinn, Estonia · Open to on-site, hybrid and remote (EU)
 📧 obielovswe@gmail.com | 💼 [LinkedIn](https://linkedin.com/in/oleksandr-bielov-07743b79) | 🐙 [GitHub](https://github.com/aleksandrbelov)
 ---
 ## SUMMARY
@@ -26,8 +26,8 @@ Jun 2020 – Jul 2025
 
 **Key Achievement:** The release automation and production validation work established the foundational infrastructure still used by the entire Teams recording team and drove my promotion.
 ---
-### **Independent Contractor — Backend & AI Engineer**
-Jul 2025 – Present
+### **OpsLab — AI Developer Consultant**
+Jul 2025 – Present · London, UK (Remote)
 *Two client projects: Slack-native investor-startup matching, and a candidate search system (MatchCV)*
 **Tech Stack:** Python, FastAPI, OpenAI API, Pinecone, Supabase, Slack Bolt, Docker, Heroku
 * Built two retrieval systems end to end and ran them in production — ingestion, sentence-boundary chunking, indexing, query serving and deployment as containers, driven from CLI and Slack entry points.

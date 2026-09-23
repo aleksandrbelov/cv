@@ -41,7 +41,7 @@ const isFiller = (line) => !line.trim() || /^-{3,}$/.test(line.trim());
 const isRepoLink = (line) => /^\W*\[[^\]]+\]\((?!https?:|mailto:)[^)]+\)$/u.test(line.trim());
 const stripEmoji = (s) => s.replace(/\p{Extended_Pictographic}️?/gu, '');
 const stripBold = (s) => s.replace(/\*\*/g, '').trim();
-const DATE_RANGE = /^[A-Z][a-z]{2} \d{4}\s*[–—-]\s*(Present|[A-Z][a-z]{2} \d{4})$/;
+const DATE_RANGE = /^[A-Z][a-z]{2} \d{4}\s*[–—-]\s*(Present|[A-Z][a-z]{2} \d{4})(\s*·\s*.+)?$/;
 
 const unrecognised = (section, line) =>
   new Error(`${SOURCE_FILE} ${section}: don't know how to lay out this line:\n    ${line.trim()}`);

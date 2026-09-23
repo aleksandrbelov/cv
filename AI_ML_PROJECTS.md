@@ -1,4 +1,4 @@
-## AI/ML PROJECTS (Independent)
+## AI/ML PROJECTS (OpsLab)
 
 ### **AI-Powered Professional Matchmaking Platform**
 *Slack-native semantic search and LLM enrichment pipeline that delivers ranked professional matches on demand, directly inside a team's workspace*  

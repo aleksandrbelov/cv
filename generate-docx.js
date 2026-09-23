@@ -49,7 +49,7 @@ const isRepoLink = (line) => /^\W*\[[^\]]+\]\((?!https?:|mailto:)[^)]+\)$/u.test
 const stripEmoji = (s) => s.replace(/\p{Extended_Pictographic}️?/gu, '');
 const stripBold = (s) => s.replace(/\*\*/g, '').trim();
 
-const DATE_RANGE = /^[A-Z][a-z]{2} \d{4}\s*[–—-]\s*(Present|[A-Z][a-z]{2} \d{4})$/;
+const DATE_RANGE = /^[A-Z][a-z]{2} \d{4}\s*[–—-]\s*(Present|[A-Z][a-z]{2} \d{4})(\s*·\s*.+)?$/;
 
 const unrecognised = (section, line) =>
   new Error(`README ${section}: don't know how to lay out this line in the DOCX:\n    ${line.trim()}`);
