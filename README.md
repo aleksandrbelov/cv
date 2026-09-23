@@ -3,14 +3,16 @@
 📧 obielovswe@gmail.com | 💼 [LinkedIn](https://linkedin.com/in/oleksandr-bielov-07743b79) | 🐙 [GitHub](https://github.com/aleksandrbelov)
 ---
 ## SUMMARY
-Senior software engineer with 13+ years in backend and distributed systems. Spent five years at Microsoft building and running a real-time media platform — Teams meeting recording and transcription — on tens of thousands of cores across commercial and government clouds.
+Senior software engineer with 13+ years in backend and distributed systems. Spent five years at Microsoft building and running a real-time media platform — Teams meeting recording and transcription — that grew from ~300K to 10M+ recordings per month, on tens of thousands of cores across commercial and government clouds. Owned services end to end: design, platform migration, production on-call.
 Now shipping production LLM systems: semantic search with hybrid retrieval and LLM re-ranking. Core stack: C#/.NET, Java/Spring, Python/FastAPI, Kafka, Kubernetes, Azure.
 ---
 ## SKILLS
 **Languages & Frameworks:** C# (.NET Core/Framework), Java (Spring Boot, Kafka Streams), Python, FastAPI, Slack Bolt, SQL  
 **AI/ML Ecosystem:** OpenAI API, Pinecone, RAG pipeline design, Hybrid vector search (dense + sparse/BM25), Multi-query retrieval, LLM reranking, Reasoning model integration, Async AI orchestration  
 **Cloud & DevOps:** Azure, Kubernetes, Docker, Heroku, Azure DevOps, CI/CD automation  
-**Data & Messaging:** Kafka, Redis, Supabase, MariaDB & MySQL
+**Data & Messaging:** Kafka, Redis, PostgreSQL, Cassandra, Supabase, MariaDB & MySQL  
+**Testing & Quality:** E2E and synthetic monitoring, integration, unit (MSTest, xUnit, pytest)  
+**Compliance & Sovereign Cloud:** GDPR, EU Data Boundary, US Government Cloud (GCC / GCC High / DoD), data residency
 ---
 ## EXPERIENCE
 ### **OpsLab — AI Developer Consultant**
@@ -32,22 +34,23 @@ Jul 2025 – Present · London, UK (Remote)
 ---
 ### **Microsoft — Software Engineer**
 Jun 2020 – Jul 2025
-*Teams Call Recording, Transcription & Captioning — deployed on tens of thousands of cores per release across commercial and government clouds*
-**Tech Stack:** C#, .NET, Redis, Docker, Kubernetes, Azure DevOps (YAML, Enterprise CI/CD).
-* **Enhanced product accessibility through transcription architecture improvements** — drove multi-phase initiative to modernize captioning capabilities, delivering features like server-side multilingual caption selection and improving inclusivity for international teams.
-* **Accelerated release velocity and reduced risk** — transformed manual deployment processes into automated, one-click workflows, significantly increasing release cadence while making production rollouts predictable.
-* **Maximized QA efficiency** — eliminated the majority of manual regression testing effort by introducing automated end-to-end validation across all deployment stages, freeing the team to focus on feature development.
-* **Reduced production incidents and improved reliability** — cut release-related outages through continuous automated testing integrated into CI/CD pipelines, catching regressions before they reached customers.
-* **Platform migration** — moved a service to Microsoft's internal Kubernetes platform during the company-wide RDFE shutdown; manifests, StatefulSet configuration for indexed replicas, on-call for incidents after the move.
+*Teams Call Recording, Transcription & Captioning — deployed on tens of thousands of cores per release across commercial and US government clouds (GCC, GCC High, DoD)*
+**Tech Stack:** C#, .NET, Redis, Docker, Kubernetes, Azure, Azure DevOps (YAML, Enterprise CI/CD).
+* **Service ownership** — owned services in the recording and transcription pipeline from design to production on-call against a 99.9% availability SLA, across environments where compliance restricts telemetry and direct access to production.
+* **Transcription architecture** — drove a multi-phase initiative to modernise the transcription architecture, splitting recognition from session management and delivering spoken-language features such as server-side multilingual caption selection.
+* **Accelerated release velocity and reduced risk** — replaced a manual multi-step release process with one-click automated deployments gated by health checks, moving release cadence from monthly to weekly.
+* **Synthetic monitoring and release gating** — built a suite that exercises the live service with real meeting recordings and transcriptions; this continuous production validation blocked broken builds and eliminated manual regression testing.
+* **Kubernetes migration** — migrated the stateful recording service off classic Azure infrastructure onto Microsoft's internal Kubernetes platform across four environments during the company-wide RDFE shutdown; carried the cutover into government clouds without service interruption.
+* **On-call and cross-boundary troubleshooting** — root-caused distributed failures across service boundaries, including hours-long recording export hangs caused by a partner service misreporting unrecoverable errors as retryable.
 
 **Key Achievement:** This automation initiative was a primary driver for my promotion and established the foundational infrastructure now used by the entire Teams recording team.
 ---
 ### **Nuvo Group Ltd. — Senior Software Engineer**
 May 2018 – Dec 2019
-*Wearable sensor technology for pregnancy monitoring.*
-**Tech Stack:** Java 8, Spring Boot, Kafka, Kafka Streams, MQTT, Docker, AWS
-* Built the messaging layer that replaced HTTP calls between microservices with Kafka request-response — a library services imported to communicate without direct coupling
-* Contributed to the telemetry pipeline: MQTT ingestion → Kafka Streams → Cassandra → processing service for sensor data from the wearable belt
+*Wearable sensor platform for pregnancy monitoring*
+**Tech Stack:** Java 8, Spring Boot, Kafka, Kafka Streams, MQTT, Cassandra, Docker, AWS
+* Built the internal messaging library that replaced direct HTTP calls between microservices with Kafka request-response, removing point-to-point coupling; adopted by services across the platform.
+* Built parts of the telemetry pipeline handling continuous sensor streams from the wearable device: MQTT ingestion → Kafka Streams → Cassandra → processing service.
 ---
 ### **EPAM Systems — Software Engineer**
 Oct 2015 – Feb 2018
@@ -56,9 +59,9 @@ Oct 2015 – Feb 2018
 * Coordinated a cross-functional squad (developers, BA, QA) through the full delivery cycle
 * Delivered backend services and supporting front-end work for enterprise clients
 ---
-### **LLC "Astelit" (Lifecell) — Junior Software Engineer**
+### **LLC "Astelit" (lifecell) — Junior Software Engineer**
 Sep 2013 – Oct 2015
-* Customized Oracle Maximo applications (Java, JSP, PL/SQL), supported production systems, and provided application monitoring and user support.
+* Customised Oracle Maximo applications (Java, JSP, PL/SQL), supported production systems, and provided application monitoring and user support.
 ---
 ## EDUCATION
 **Bachelor's Degree in Computer Science**  

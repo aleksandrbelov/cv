@@ -117,8 +117,9 @@
                     <p class="summary-text">
                         Senior software engineer with 13+ years in backend and distributed systems. Spent five
                         years at Microsoft building and running a real-time media platform — Teams meeting
-                        recording and transcription — on tens of thousands of cores across commercial and
-                        government clouds.
+                        recording and transcription — that grew from ~300K to 10M+ recordings per month, on
+                        tens of thousands of cores across commercial and government clouds. Owned services end
+                        to end: design, platform migration, production on-call.
                         Now shipping production LLM systems: semantic search with hybrid retrieval and LLM
                         re-ranking. Core stack: C#/.NET, Java/Spring, Python/FastAPI, Kafka, Kubernetes, Azure.
                     </p>
@@ -329,29 +330,35 @@
                                     <p class="job-title-pill">Software Engineer</p>
                                     <p class="job-subtitle">Teams Call Recording, Transcription & Captioning —
                                         deployed on tens of thousands of cores per release across commercial and
-                                        government clouds</p>
+                                        US government clouds (GCC, GCC High, DoD)</p>
                                 </div>
                                 <div class="date-badge">Jun 2020 – Jul 2025</div>
                             </div>
 
                             <ul class="achievement-list">
-                                <li><strong>Enhanced product accessibility through transcription architecture
-                                        improvements</strong> — drove multi-phase initiative to modernize captioning
-                                    capabilities, delivering features like server-side multilingual caption selection
-                                    and
-                                    improving inclusivity for international teams.</li>
-                                <li><strong>Accelerated release velocity and reduced risk</strong> — transformed manual
-                                    deployment processes into automated, one-click workflows, significantly increasing
-                                    release cadence while making production rollouts predictable.</li>
-                                <li><strong>Maximized QA efficiency</strong> — eliminated the majority of manual
-                                    regression testing effort by introducing automated end-to-end validation across all
-                                    deployment stages, freeing the team to focus on feature development.</li>
-                                <li><strong>Reduced production incidents and improved reliability</strong> — cut
-                                    release-related outages through continuous automated testing integrated into CI/CD
-                                    pipelines, catching regressions before they reached customers.</li>
-                                <li><strong>Platform migration</strong> — moved a service to Microsoft's internal
-                                    Kubernetes platform during the company-wide RDFE shutdown; manifests, StatefulSet
-                                    configuration for indexed replicas, on-call for incidents after the move.</li>
+                                <li><strong>Service ownership</strong> — owned services in the recording and
+                                    transcription pipeline from design to production on-call against a 99.9%
+                                    availability SLA, across environments where compliance restricts telemetry and
+                                    direct access to production.</li>
+                                <li><strong>Transcription architecture</strong> — drove a multi-phase initiative to
+                                    modernise the transcription architecture, splitting recognition from session
+                                    management and delivering spoken-language features such as server-side multilingual
+                                    caption selection.</li>
+                                <li><strong>Accelerated release velocity and reduced risk</strong> — replaced a manual
+                                    multi-step release process with one-click automated deployments gated by health
+                                    checks, moving release cadence from monthly to weekly.</li>
+                                <li><strong>Synthetic monitoring and release gating</strong> — built a suite that
+                                    exercises the live service with real meeting recordings and transcriptions; this
+                                    continuous production validation blocked broken builds and eliminated manual
+                                    regression testing.</li>
+                                <li><strong>Kubernetes migration</strong> — migrated the stateful recording service off
+                                    classic Azure infrastructure onto Microsoft's internal Kubernetes platform across
+                                    four environments during the company-wide RDFE shutdown; carried the cutover into
+                                    government clouds without service interruption.</li>
+                                <li><strong>On-call and cross-boundary troubleshooting</strong> — root-caused
+                                    distributed failures across service boundaries, including hours-long recording
+                                    export hangs caused by a partner service misreporting unrecoverable errors as
+                                    retryable.</li>
                             </ul>
                             <div class="key-achievement highlight-box">
                                 <div class="highlight-icon">
@@ -378,20 +385,21 @@
                                 <div class="exp-meta">
                                     <h3 class="company-name">Nuvo Group Ltd.</h3>
                                     <p class="job-title-pill">Senior Software Engineer</p>
-                                    <p class="job-subtitle">Wearable sensor technology for pregnancy monitoring</p>
+                                    <p class="job-subtitle">Wearable sensor platform for pregnancy monitoring</p>
                                 </div>
                                 <div class="date-badge">May 2018 – Dec 2019</div>
                             </div>
                             <div class="tech-stack-mini">
                                 <span>Java 8</span><span>Spring Boot</span><span>Kafka</span><span>Kafka
-                                    Streams</span><span>MQTT</span><span>Docker</span><span>AWS</span>
+                                    Streams</span><span>MQTT</span><span>Cassandra</span><span>Docker</span><span>AWS</span>
                             </div>
                             <ul class="achievement-list">
-                                <li>Built the messaging layer that replaced HTTP calls between microservices with Kafka
-                                    request-response — a library services imported to communicate without direct
-                                    coupling</li>
-                                <li>Contributed to the telemetry pipeline: MQTT ingestion → Kafka Streams →
-                                    Cassandra → processing service for sensor data from the wearable belt</li>
+                                <li>Built the internal messaging library that replaced direct HTTP calls between
+                                    microservices with Kafka request-response, removing point-to-point coupling;
+                                    adopted by services across the platform.</li>
+                                <li>Built parts of the telemetry pipeline handling continuous sensor streams from the
+                                    wearable device: MQTT ingestion → Kafka Streams → Cassandra → processing
+                                    service.</li>
                             </ul>
                         </div>
 
@@ -423,13 +431,13 @@
                             <div class="timeline-node"></div>
                             <div class="experience-header">
                                 <div class="exp-meta">
-                                    <h3 class="company-name">LLC "Astelit" (Lifecell)</h3>
+                                    <h3 class="company-name">LLC "Astelit" (lifecell)</h3>
                                     <p class="job-title-pill">Junior Software Engineer</p>
                                 </div>
                                 <div class="date-badge">Sep 2013 – Oct 2015</div>
                             </div>
                             <ul class="achievement-list">
-                                <li>Customized Oracle Maximo applications (Java, JSP, PL/SQL), supported production
+                                <li>Customised Oracle Maximo applications (Java, JSP, PL/SQL), supported production
                                     systems, and
                                     provided application monitoring and user support.</li>
                             </ul>
@@ -515,8 +523,33 @@
                             <div class="skill-tags">
                                 <span class="skill-tag">Kafka</span>
                                 <span class="skill-tag">Redis</span>
+                                <span class="skill-tag">PostgreSQL</span>
+                                <span class="skill-tag">Cassandra</span>
                                 <span class="skill-tag">Supabase</span>
                                 <span class="skill-tag">MariaDB & MySQL</span>
+                            </div>
+                        </div>
+
+                        <div>
+                            <h4
+                                style="font-size: 0.95rem; font-weight: 600; color: var(--text-primary); margin-bottom: 0.5rem; letter-spacing: 0.02em;">
+                                Testing & Quality</h4>
+                            <div class="skill-tags">
+                                <span class="skill-tag">E2E and synthetic monitoring</span>
+                                <span class="skill-tag">integration</span>
+                                <span class="skill-tag">unit (MSTest, xUnit, pytest)</span>
+                            </div>
+                        </div>
+
+                        <div>
+                            <h4
+                                style="font-size: 0.95rem; font-weight: 600; color: var(--text-primary); margin-bottom: 0.5rem; letter-spacing: 0.02em;">
+                                Compliance & Sovereign Cloud</h4>
+                            <div class="skill-tags">
+                                <span class="skill-tag">GDPR</span>
+                                <span class="skill-tag">EU Data Boundary</span>
+                                <span class="skill-tag">US Government Cloud (GCC / GCC High / DoD)</span>
+                                <span class="skill-tag">data residency</span>
                             </div>
                         </div>
                     </div>

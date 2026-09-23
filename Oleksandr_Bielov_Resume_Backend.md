@@ -3,13 +3,15 @@
 📧 obielovswe@gmail.com | 💼 [LinkedIn](https://linkedin.com/in/oleksandr-bielov-07743b79) | 🐙 [GitHub](https://github.com/aleksandrbelov)
 ---
 ## SUMMARY
-Senior software engineer with 13+ years in backend and distributed systems. Five years at Microsoft on the Teams real-time media platform — call recording, transcription and captioning — running on tens of thousands of cores per release across commercial and government (sovereign) clouds. Owned services end to end: design, platform migration, production on-call. Shipped two production LLM retrieval systems: investor-startup matching and candidate search (MatchCV). Primary stack C#/.NET and Java/Spring; Python for recent retrieval and LLM work.
+Senior software engineer with 13+ years in backend and distributed systems. Five years at Microsoft on the Teams real-time media platform — call recording, transcription and captioning — a platform that grew from ~300K to 10M+ recordings per month, running on tens of thousands of cores per release across commercial and government (sovereign) clouds. Owned services end to end: design, platform migration, production on-call. Shipped two production LLM retrieval systems: investor-startup matching and candidate search (MatchCV). Primary stack C#/.NET and Java/Spring; Python for recent retrieval and LLM work.
 ---
 ## SKILLS
 **Languages & Frameworks:** C# (.NET Core / .NET Framework), Java (Spring Framework), Python (FastAPI), SQL
 **Platform & Infrastructure:** Kubernetes, Docker, Azure, Azure DevOps, CI/CD
 **Data & Messaging:** PostgreSQL, Kafka, Cassandra, Redis, MySQL / MariaDB, Supabase
 **Retrieval & LLM Systems:** RAG, hybrid dense + BM25 retrieval, LLM re-ranking, OpenAI API, Pinecone
+**Testing & Quality:** E2E and synthetic monitoring, integration, unit (MSTest, xUnit, pytest)
+**Compliance & Sovereign Cloud:** GDPR, EU Data Boundary, US Government Cloud (GCC / GCC High / DoD), data residency
 ---
 ## EXPERIENCE
 ### **Microsoft — Software Engineer**
@@ -17,7 +19,7 @@ Jun 2020 – Jul 2025
 *Teams Call Recording, Transcription & Captioning — deployed on tens of thousands of cores per release across commercial and US government clouds (GCC, GCC High, DoD)*
 **Tech Stack:** C#, .NET Core / .NET Framework, Kubernetes, Docker, Redis, Azure, Azure DevOps (YAML CI/CD)
 
-* **Service Ownership:** Owned services in the recording and transcription pipeline from design to production on-call, across environments where compliance restricts telemetry and direct access to production.
+* **Service Ownership:** Owned services in the recording and transcription pipeline from design to production on-call against a 99.9% availability SLA, across environments where compliance restricts telemetry and direct access to production.
 * **Transcription Architecture:** Drove a multi-phase initiative to modernise the transcription architecture, splitting recognition from session management and delivering spoken-language features.
 * **Accelerated release velocity and reduced risk:** Led the move from a manual multi-step release process to one-click automated deployments gated by health checks. This accelerated release cadence from monthly to weekly.
 * **Synthetic Monitoring & Release Gating:** Built a suite that exercises the live service with real meeting recordings and transcriptions. This continuous production validation blocked broken builds and eliminated manual testing.
