@@ -16,7 +16,7 @@ Senior software engineer with 13+ years in backend and distributed systems. Five
 ## EXPERIENCE
 ### **Microsoft — Software Engineer**
 Jun 2020 – Jul 2025
-*Teams Call Recording, Transcription & Captioning — deployed on tens of thousands of cores per release across commercial and US government clouds (GCC, GCC High, DoD)*
+*Teams Call Recording, Transcription & Captioning — ~300K → 10M+ recordings per month, deployed on tens of thousands of cores per release across commercial and US government clouds (GCC, GCC High, DoD)*
 **Tech Stack:** C#, .NET Core / .NET Framework, Kubernetes, Docker, Redis, Azure, Azure DevOps (YAML CI/CD)
 
 * **Service Ownership:** Owned services in the recording and transcription pipeline from design to production on-call against a 99.9% availability SLA, across environments where compliance restricts telemetry and direct access to production.

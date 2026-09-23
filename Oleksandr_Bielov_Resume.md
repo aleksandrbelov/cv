@@ -34,16 +34,16 @@ Jul 2025 – Present · London, UK (Remote)
 ---
 ### **Microsoft — Software Engineer**
 Jun 2020 – Jul 2025
-*Teams Call Recording, Transcription & Captioning — deployed on tens of thousands of cores per release across commercial and US government clouds (GCC, GCC High, DoD)*
+*Teams Call Recording, Transcription & Captioning — ~300K → 10M+ recordings per month, deployed on tens of thousands of cores per release across commercial and US government clouds (GCC, GCC High, DoD)*
 **Tech Stack:** C#, .NET, Redis, Docker, Kubernetes, Azure, Azure DevOps (YAML, Enterprise CI/CD).
 * **Service ownership** — owned services in the recording and transcription pipeline from design to production on-call against a 99.9% availability SLA, across environments where compliance restricts telemetry and direct access to production.
-* **Transcription architecture** — drove a multi-phase initiative to modernise the transcription architecture, splitting recognition from session management and delivering spoken-language features such as server-side multilingual caption selection.
+* **Transcription architecture** — drove a multi-phase initiative to modernise the transcription architecture, splitting recognition from session management and delivering spoken-language features.
 * **Accelerated release velocity and reduced risk** — replaced a manual multi-step release process with one-click automated deployments gated by health checks, moving release cadence from monthly to weekly.
 * **Synthetic monitoring and release gating** — built a suite that exercises the live service with real meeting recordings and transcriptions; this continuous production validation blocked broken builds and eliminated manual regression testing.
 * **Kubernetes migration** — migrated the stateful recording service off classic Azure infrastructure onto Microsoft's internal Kubernetes platform across four environments during the company-wide RDFE shutdown; carried the cutover into government clouds without service interruption.
 * **On-call and cross-boundary troubleshooting** — root-caused distributed failures across service boundaries, including hours-long recording export hangs caused by a partner service misreporting unrecoverable errors as retryable.
 
-**Key Achievement:** This automation initiative was a primary driver for my promotion and established the foundational infrastructure now used by the entire Teams recording team.
+**Key Achievement:** The release automation and production validation work established the foundational infrastructure still used by the entire Teams recording team and drove my promotion.
 ---
 ### **Nuvo Group Ltd. — Senior Software Engineer**
 May 2018 – Dec 2019
