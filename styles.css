@@ -858,16 +858,29 @@ h1, h2, h3, h4, h5, h6 {
     .timeline-item {
         margin-left: 0 !important;
         padding-left: 0 !important;
-        break-inside: avoid !important;
-        page-break-inside: avoid !important;
+        /* Let a long role start on the current page instead of jumping whole to the next */
+        break-inside: auto !important;
+        page-break-inside: auto !important;
     }
 
     .timeline-node {
         display: none !important;
     }
 
+    /* Keep the date badge top-right even when a long subtitle fills the meta column */
     .experience-header {
         margin-bottom: 0.2rem !important;
+        flex-wrap: nowrap !important;
+    }
+
+    .exp-meta {
+        flex: 1 1 auto !important;
+        min-width: 0 !important;
+    }
+
+    .date-badge {
+        flex-shrink: 0 !important;
+        white-space: nowrap !important;
     }
 
     .company-name {
@@ -933,6 +946,11 @@ h1, h2, h3, h4, h5, h6 {
         display: none !important;
     }
 
+    /* Override the inline 2rem gap between OpsLab projects */
+    .project-block .achievement-list {
+        margin-bottom: 0.4rem !important;
+    }
+
     .project-block {
         margin-bottom: 0.15rem !important;
         break-inside: auto !important;
@@ -979,7 +997,7 @@ h1, h2, h3, h4, h5, h6 {
         page-break-after: avoid !important;
     }
 
-    .achievement-list, .highlight-box, .edu-card {
+    .highlight-box, .edu-card {
         break-inside: avoid !important;
         page-break-inside: avoid !important;
     }

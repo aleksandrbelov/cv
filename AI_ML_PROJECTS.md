@@ -1,17 +1,5 @@
 ## AI/ML PROJECTS (OpsLab)
 
-### **AI-Powered Professional Matchmaking Platform**
-*Slack-native semantic search and LLM enrichment pipeline that delivers ranked professional matches on demand, directly inside a team's workspace*  
-**Tech Stack:** Python 3.11, OpenAI API (o3-mini, gpt-4.1, text-embedding-3-large), Pinecone, Slack Bolt, Supabase, httpx, Docker, Heroku
-* **Slack-native semantic search over a professional network** — users describe the connection they need in plain language; a reasoning model rewrites the request into a retrieval-optimised query, normalising non-English input to English before embedding. Profiles are chunked at sentence boundaries with per-chunk vectors and server-side metadata filters.
-* **Model-agnostic LLM service layer** — adapts request construction per model family (developer role, `max_completion_tokens`, no temperature for reasoning models), making the model swappable through config, including self-hosted OpenAI-compatible endpoints. Client-side throttling against a tokens-per-minute budget, batched concurrent summarisation, exponential backoff on rate limits.
-* **On-demand LinkedIn enrichment from Slack** — an LLM distils contacts' recent posts and profile text into a matching-oriented summary, fanned out to Supabase, the CRM and the vector index; a freshness window skips recently-enriched contacts to cut redundant API spend.
-* **Built** a flexible LLM abstraction layer supporting multiple OpenAI APIs, with 90-day Supabase result caching and user-controlled cache refresh — reducing redundant API calls and keeping response times fast for repeat queries.
-* **Designed** a fully async Python stack (Slack Bolt, httpx, asyncio) ensuring zero blocked Slack ACKs across all concurrent interactions.
-* **Maintained** zero-downtime data integrity during live CRM schema migrations via dual-origin DTO abstraction bridging NetHunt CRM and Supabase; implemented per-user Fernet-encrypted API key storage for individual billing attribution.
-
----
-
 ### **MatchCV — AI-Powered Candidate Search System**
 *End-to-end RAG pipeline that indexes candidate CVs into a Pinecone vector database and enables semantic candidate search via natural language queries posted in ClickUp Chat*  
 **Tech Stack:** Python, FastAPI, OpenAI API (GPT-4o, text-embedding-3-large), Pinecone, ClickUp API, Docker, Heroku, pdfplumber, python-docx, pytest
@@ -21,3 +9,14 @@
 * **Built** hybrid retrieval in Pinecone — dense embeddings and BM25 sparse vectors combined in a single query through weighted dot-product scoring; dense vectors catch paraphrasing and conceptual matches, BM25 catches exact tokens like framework names and certifications. Wrapped with a multi-query layer that executes parallel queries and deduplicates results for improved recall across both keyword-heavy and conceptual searches.
 * **Added** an LLM re-ranking layer as a second-stage judge that scores each candidate against the original request, surfacing strong conceptual matches that pure vector similarity would bury; falls back to vector scores if the reranker fails or returns invalid JSON.
 * **Deployed** a production-ready FastAPI service on Docker/Heroku, wired to ClickUp webhooks so that natural language queries posted in a ClickUp Chat thread automatically trigger candidate search and return ranked results as a reply — with a clean layered architecture and a comprehensive pytest suite covering ingestion, retrieval, and ranking layers.
+
+---
+
+### **AI-Powered Professional Matchmaking Platform**
+*Slack-native semantic search and LLM enrichment pipeline that delivers ranked professional matches on demand, directly inside a team's workspace*  
+**Tech Stack:** Python 3.11, OpenAI API (o3-mini, gpt-4.1, text-embedding-3-large), Pinecone, Slack Bolt, Supabase, httpx, Docker, Heroku
+* **Slack-native semantic search over a professional network** — users describe the connection they need in plain language; a reasoning model rewrites the request into a retrieval-optimised query, normalising non-English input to English before embedding. Profiles are chunked at sentence boundaries with per-chunk vectors and server-side metadata filters.
+* **On-demand LinkedIn enrichment from Slack** — an LLM distils contacts' recent posts and profile text into a matching-oriented summary, fanned out to Supabase, the CRM and the vector index; a freshness window skips recently-enriched contacts to cut redundant API spend.
+* **Built** a flexible LLM abstraction layer supporting multiple OpenAI APIs, with 90-day Supabase result caching and user-controlled cache refresh — reducing redundant API calls and keeping response times fast for repeat queries.
+* **Designed** a fully async Python stack (Slack Bolt, httpx, asyncio) ensuring zero blocked Slack ACKs across all concurrent interactions.
+* **Maintained** zero-downtime data integrity during live CRM schema migrations via dual-origin DTO abstraction bridging NetHunt CRM and Supabase; implemented per-user Fernet-encrypted API key storage for individual billing attribution.

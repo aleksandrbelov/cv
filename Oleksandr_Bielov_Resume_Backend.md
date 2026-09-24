@@ -1,5 +1,5 @@
 # OLEKSANDR BIELOV
-**Senior Software Engineer | Backend & Distributed Systems** | Tallinn, Estonia · Open to on-site, hybrid and remote (EU)
+**Senior Software Engineer | Backend & Distributed Systems** | Helsinki, Finland · Open to on-site, hybrid and remote (EU)
 📧 obielovswe@gmail.com | 💼 [LinkedIn](https://linkedin.com/in/oleksandr-bielov-07743b79) | 🐙 [GitHub](https://github.com/aleksandrbelov)
 ---
 ## SUMMARY
@@ -18,14 +18,12 @@ Senior software engineer with 13+ years in backend and distributed systems. Five
 Jun 2020 – Jul 2025
 *Teams Call Recording, Transcription & Captioning — ~300K → 10M+ recordings per month, deployed on tens of thousands of cores per release across commercial and US government clouds (GCC, GCC High, DoD)*
 **Tech Stack:** C#, .NET Core / .NET Framework, Kubernetes, Docker, Redis, Azure, Azure DevOps (YAML CI/CD)
-
 * **Service Ownership:** Owned services in the recording and transcription pipeline from design to production on-call against a 99.9% availability SLA, across environments where compliance restricts telemetry and direct access to production.
 * **Transcription Architecture:** Drove a multi-phase initiative to modernise the transcription architecture, splitting recognition from session management and delivering spoken-language features.
-* **Accelerated release velocity and reduced risk:** Led the move from a manual multi-step release process to one-click automated deployments gated by health checks. This accelerated release cadence from monthly to weekly.
+* **Accelerated release velocity and reduced risk:** Led the move from a manual multi-step release process to one-click automated deployments. This accelerated release cadence from monthly to weekly.
 * **Synthetic Monitoring & Release Gating:** Built a suite that exercises the live service with real meeting recordings and transcriptions. This continuous production validation blocked broken builds and eliminated manual testing.
 * **Kubernetes Migration:** Migrated the stateful recording service off classic Azure infrastructure onto Microsoft's internal Kubernetes platform across four environments. Carried the cutover into government clouds without service interruption.
 * **Cross-Boundary Troubleshooting:** Root-caused distributed failures, including resolving hours-long recording export hangs caused by a partner service misreporting unrecoverable errors as retryable.
-
 **Key Achievement:** The release automation and production validation work established the foundational infrastructure still used by the entire Teams recording team and drove my promotion.
 ---
 ### **OpsLab — AI Developer Consultant**

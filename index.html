@@ -156,36 +156,6 @@
                             <div class="project-entry" style="padding-top: 0;">
                                 <div class="project-block">
                                     <h4 class="company-name" style="font-size: 1.1rem; color: var(--text-primary);">
-                                        AI-Powered
-                                        Professional Matchmaking Platform</h4>
-                                    <div class="tech-stack-mini">
-                                        <span>Python</span><span>OpenAI API</span><span>Pinecone</span><span>Slack
-                                            Bolt</span><span>Supabase</span><span>Docker</span><span>Heroku</span>
-                                    </div>
-                                    <ul class="achievement-list" style="margin-bottom: 2rem;">
-                                        <li><strong>Slack-native semantic search over a professional network</strong> —
-                                            users describe the connection they need in plain language; a reasoning model
-                                            rewrites the request into a retrieval-optimised query, normalising
-                                            non-English input to English before embedding. Profiles are chunked at
-                                            sentence boundaries with per-chunk vectors and server-side metadata
-                                            filters.</li>
-                                        <li><strong>Model-agnostic LLM service layer</strong> — adapts request
-                                            construction per model family (developer role,
-                                            <code>max_completion_tokens</code>, no temperature for reasoning models),
-                                            making the model swappable through config, including self-hosted
-                                            OpenAI-compatible endpoints. Client-side throttling against a
-                                            tokens-per-minute budget, batched concurrent summarisation, exponential
-                                            backoff on rate limits.
-                                        </li>
-                                        <li><strong>On-demand LinkedIn enrichment from Slack</strong> — an LLM distils
-                                            contacts' recent posts and profile text into a matching-oriented summary,
-                                            fanned out to Supabase, the CRM and the vector index; a freshness window
-                                            skips recently-enriched contacts to cut redundant API spend.</li>
-                                    </ul>
-                                </div>
-
-                                <div class="project-block">
-                                    <h4 class="company-name" style="font-size: 1.1rem; color: var(--text-primary);">
                                         MatchCV —
                                         AI-Powered Candidate Search System</h4>
                                     <div class="tech-stack-mini">
@@ -193,7 +163,7 @@
                                             API</span><span>Pinecone</span><span>ClickUp
                                             API</span><span>Docker</span><span>Heroku</span>
                                     </div>
-                                    <ul class="achievement-list">
+                                    <ul class="achievement-list" style="margin-bottom: 2rem;">
                                         <li><strong>Turned raw CVs into a searchable talent database</strong> — batch
                                             ingestion pipeline that pulls ClickUp tasks with attachments, extracts text
                                             from PDF/DOCX, parses it into structured fields with an LLM and indexes it;
@@ -212,6 +182,28 @@
                                             request, catching strong conceptual matches that basic similarity search
                                             would bury; falls back to vector scores if the reranker fails or returns
                                             invalid JSON.</li>
+                                    </ul>
+                                </div>
+
+                                <div class="project-block">
+                                    <h4 class="company-name" style="font-size: 1.1rem; color: var(--text-primary);">
+                                        AI-Powered
+                                        Professional Matchmaking Platform</h4>
+                                    <div class="tech-stack-mini">
+                                        <span>Python</span><span>OpenAI API</span><span>Pinecone</span><span>Slack
+                                            Bolt</span><span>Supabase</span><span>Docker</span><span>Heroku</span>
+                                    </div>
+                                    <ul class="achievement-list">
+                                        <li><strong>Slack-native semantic search over a professional network</strong> —
+                                            users describe the connection they need in plain language; a reasoning model
+                                            rewrites the request into a retrieval-optimised query, normalising
+                                            non-English input to English before embedding. Profiles are chunked at
+                                            sentence boundaries with per-chunk vectors and server-side metadata
+                                            filters.</li>
+                                        <li><strong>On-demand LinkedIn enrichment from Slack</strong> — an LLM distils
+                                            contacts' recent posts and profile text into a matching-oriented summary,
+                                            fanned out to Supabase, the CRM and the vector index; a freshness window
+                                            skips recently-enriched contacts to cut redundant API spend.</li>
                                     </ul>
                                 </div>
                             </div>
@@ -242,46 +234,6 @@
                                     <div class="expand-inner" style="padding: 0 1.5rem 1.5rem 1.5rem;">
                                         <!-- Project 1 Detailed -->
                                         <div class="project-entry" style="padding-top: 0.5rem;">
-                                            <h3 class="project-name" style="font-size:1.15rem;">AI Matchmaking Platform
-                                                Architecture</h3>
-                                            <ul class="achievement-list">
-                                                <li><strong>Slack-native semantic search over a professional
-                                                        network</strong> — users describe the connection they need in
-                                                    plain language; a reasoning model rewrites the request into a
-                                                    retrieval-optimised query, normalising non-English input to English
-                                                    before embedding. Profiles are chunked at sentence boundaries with
-                                                    per-chunk vectors and server-side metadata filters.</li>
-                                                <li><strong>Model-agnostic LLM service layer</strong> — adapts request
-                                                    construction per model family (developer role,
-                                                    <code>max_completion_tokens</code>, no temperature for reasoning
-                                                    models), making the model swappable through config, including
-                                                    self-hosted OpenAI-compatible endpoints. Client-side throttling
-                                                    against a tokens-per-minute budget, batched concurrent
-                                                    summarisation, exponential backoff on rate limits.
-                                                </li>
-                                                <li><strong>On-demand LinkedIn enrichment from Slack</strong> — an LLM
-                                                    distils contacts' recent posts and profile text into a
-                                                    matching-oriented summary, fanned out to Supabase, the CRM and the
-                                                    vector index; a freshness window skips recently-enriched contacts to
-                                                    cut redundant API spend.</li>
-                                                <li><strong>Built</strong> a flexible LLM abstraction layer supporting
-                                                    multiple OpenAI APIs, with 90-day Supabase result caching and
-                                                    user-controlled cache refresh — reducing redundant API calls and
-                                                    keeping response times fast for repeat queries.</li>
-                                                <li><strong>Designed</strong> a fully async Python stack (Slack Bolt,
-                                                    httpx, asyncio) ensuring zero blocked Slack ACKs across all
-                                                    concurrent interactions.</li>
-                                                <li><strong>Maintained</strong> zero-downtime data integrity during live
-                                                    CRM schema migrations via dual-origin DTO abstraction bridging
-                                                    NetHunt CRM and Supabase; implemented per-user Fernet-encrypted API
-                                                    key storage for individual billing attribution.</li>
-                                            </ul>
-                                        </div>
-
-                                        <div class="project-divider" style="margin: 1.5rem 0;"></div>
-
-                                        <!-- Project 2 Detailed -->
-                                        <div class="project-entry" style="padding-top: 0;">
                                             <h3 class="project-name" style="font-size:1.15rem;">MatchCV Pipeline
                                                 Architecture
                                             </h3>
@@ -327,6 +279,38 @@
                                                     ingestion, retrieval, and ranking layers.</li>
                                             </ul>
                                         </div>
+
+                                        <div class="project-divider" style="margin: 1.5rem 0;"></div>
+
+                                        <!-- Project 2 Detailed -->
+                                        <div class="project-entry" style="padding-top: 0;">
+                                            <h3 class="project-name" style="font-size:1.15rem;">AI Matchmaking Platform
+                                                Architecture</h3>
+                                            <ul class="achievement-list">
+                                                <li><strong>Slack-native semantic search over a professional
+                                                        network</strong> — users describe the connection they need in
+                                                    plain language; a reasoning model rewrites the request into a
+                                                    retrieval-optimised query, normalising non-English input to English
+                                                    before embedding. Profiles are chunked at sentence boundaries with
+                                                    per-chunk vectors and server-side metadata filters.</li>
+                                                <li><strong>On-demand LinkedIn enrichment from Slack</strong> — an LLM
+                                                    distils contacts' recent posts and profile text into a
+                                                    matching-oriented summary, fanned out to Supabase, the CRM and the
+                                                    vector index; a freshness window skips recently-enriched contacts to
+                                                    cut redundant API spend.</li>
+                                                <li><strong>Built</strong> a flexible LLM abstraction layer supporting
+                                                    multiple OpenAI APIs, with 90-day Supabase result caching and
+                                                    user-controlled cache refresh — reducing redundant API calls and
+                                                    keeping response times fast for repeat queries.</li>
+                                                <li><strong>Designed</strong> a fully async Python stack (Slack Bolt,
+                                                    httpx, asyncio) ensuring zero blocked Slack ACKs across all
+                                                    concurrent interactions.</li>
+                                                <li><strong>Maintained</strong> zero-downtime data integrity during live
+                                                    CRM schema migrations via dual-origin DTO abstraction bridging
+                                                    NetHunt CRM and Supabase; implemented per-user Fernet-encrypted API
+                                                    key storage for individual billing attribution.</li>
+                                            </ul>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -355,8 +339,8 @@
                                     modernise the transcription architecture, splitting recognition from session
                                     management and delivering spoken-language features.</li>
                                 <li><strong>Accelerated release velocity and reduced risk</strong> — replaced a manual
-                                    multi-step release process with one-click automated deployments gated by health
-                                    checks, moving release cadence from monthly to weekly.</li>
+                                    multi-step release process with one-click automated deployments, moving release
+                                    cadence from monthly to weekly.</li>
                                 <li><strong>Synthetic monitoring and release gating</strong> — built a suite that
                                     exercises the live service with real meeting recordings and transcriptions; this
                                     continuous production validation blocked broken builds and eliminated manual
