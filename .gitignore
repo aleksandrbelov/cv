@@ -20,3 +20,6 @@ Thumbs.db
 .idea/
 *.swp
 *.swo
+
+# Private interview prep (repo is public)
+INTERVIEW_PREP.md
