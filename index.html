@@ -126,11 +126,12 @@
                 <section class="bento-card bento-summary hover-glow">
                     <h3 class="bento-title">Overview</h3>
                     <p class="summary-text">
-                        Senior software engineer with 13+ years in backend and distributed systems. Spent five
-                        years at Microsoft building and running a real-time media platform — Teams meeting
-                        recording and transcription — that grew from ~300K to 10M+ recordings per month, on
-                        tens of thousands of cores across commercial and government clouds. Owned services end
-                        to end: design, platform migration, production on-call.
+                        Senior software engineer with 13+ years in backend and distributed systems. Five years
+                        at Microsoft building and running Teams meeting recording and transcription as it scaled
+                        30x to 10M+ recordings a month, on tens of thousands of cores across commercial and
+                        government clouds. Owned services from design to 24/7 on-call; led a captions service's
+                        extraction from a monolith and migrated its infrastructure, saving ~$1.8M a year in
+                        compute; delivered data residency in 5 regions for 170K+ customers.
                         Now shipping production LLM systems: semantic search with hybrid retrieval and LLM
                         re-ranking. Core stack: C#/.NET, Java/Spring, Python/FastAPI, Kafka, Kubernetes, Azure.
                     </p>
@@ -164,24 +165,22 @@
                                             API</span><span>Docker</span><span>Heroku</span>
                                     </div>
                                     <ul class="achievement-list" style="margin-bottom: 2rem;">
-                                        <li><strong>Turned raw CVs into a searchable talent database</strong> — batch
-                                            ingestion pipeline that pulls ClickUp tasks with attachments, extracts text
-                                            from PDF/DOCX, parses it into structured fields with an LLM and indexes it;
-                                            run on demand via CLI or a one-shot container.</li>
+                                        <li><strong>Turned 1,000 raw CVs into a searchable talent database</strong> —
+                                            batch pipeline pulls CVs from ClickUp, extracts PDF/DOCX text, parses it
+                                            into structured fields with an LLM and indexes it; runs on demand from a
+                                            CLI or a one-shot container.</li>
                                         <li><strong>Made search understand recruiter intent</strong> — an LLM
                                             expands each query into three semantic variants and extracts hard filters
-                                            like experience range; results are deduplicated by best score, with
-                                            automatic
-                                            retry without filters when the LLM’s constraints return nothing.</li>
-                                        <li><strong>Built hybrid retrieval in Pinecone</strong> — dense embeddings
-                                            and BM25 sparse vectors in a single query, combined through weighted
-                                            dot-product scoring; dense catches paraphrasing, BM25 catches exact tokens
-                                            like framework names and certifications.</li>
-                                        <li><strong>Ensured top candidate visibility via re-ranking</strong> — added an
-                                            LLM acting as a second-stage judge to score candidates against the original
-                                            request, catching strong conceptual matches that basic similarity search
-                                            would bury; falls back to vector scores if the reranker fails or returns
-                                            invalid JSON.</li>
+                                            such as years of experience; results are deduplicated by best score and
+                                            retried without filters when the filters return nothing.</li>
+                                        <li><strong>Built hybrid retrieval in Pinecone</strong> — dense and BM25
+                                            sparse vectors in one query with weighted scoring: dense catches
+                                            paraphrases, BM25 catches exact tokens like framework names and
+                                            certifications.</li>
+                                        <li><strong>Re-ranking that degrades safely</strong> — a second-stage LLM judge
+                                            scores candidates against the original request, surfacing strong
+                                            conceptual matches that similarity search buries; falls back to vector
+                                            scores if the re-ranker fails or returns invalid JSON.</li>
                                     </ul>
                                 </div>
 
@@ -194,16 +193,15 @@
                                             Bolt</span><span>Supabase</span><span>Docker</span><span>Heroku</span>
                                     </div>
                                     <ul class="achievement-list">
-                                        <li><strong>Slack-native semantic search over a professional network</strong> —
-                                            users describe the connection they need in plain language; a reasoning model
-                                            rewrites the request into a retrieval-optimised query, normalising
-                                            non-English input to English before embedding. Profiles are chunked at
-                                            sentence boundaries with per-chunk vectors and server-side metadata
-                                            filters.</li>
+                                        <li><strong>Slack-native semantic search across 2,000 professional
+                                                profiles</strong> — users describe the connection they need in plain
+                                            language; a reasoning model rewrites it into a retrieval-optimised query,
+                                            normalising non-English input to English. Profiles are chunked at sentence
+                                            boundaries with per-chunk vectors and server-side metadata filters.</li>
                                         <li><strong>On-demand LinkedIn enrichment from Slack</strong> — an LLM distils
                                             contacts' recent posts and profile text into a matching-oriented summary,
-                                            fanned out to Supabase, the CRM and the vector index; a freshness window
-                                            skips recently-enriched contacts to cut redundant API spend.</li>
+                                            written to Supabase, the CRM and the vector index; a freshness window
+                                            skips recently enriched contacts to cut API spend.</li>
                                     </ul>
                                 </div>
                             </div>
@@ -323,51 +321,53 @@
                                 <div class="exp-meta">
                                     <h3 class="company-name">Microsoft</h3>
                                     <p class="job-title-pill">Software Engineer</p>
-                                    <p class="job-subtitle">Teams Call Recording, Transcription & Captioning —
-                                        ~300K → 10M+ recordings per month, deployed on tens of thousands of cores
-                                        per release across commercial and US government clouds (GCC, GCC High, DoD)</p>
+                                    <p class="job-subtitle">Teams Call Recording, Transcription & Captioning</p>
                                 </div>
                                 <div class="date-badge">Jun 2020 – Jul 2025</div>
                             </div>
 
                             <ul class="achievement-list">
-                                <li><strong>Service ownership</strong> — owned services in the recording and
-                                    transcription pipeline from design to production on-call against a 99.9%
-                                    availability SLA, across environments where compliance restricts telemetry and
-                                    direct access to production.</li>
-                                <li><strong>Transcription architecture</strong> — drove a multi-phase initiative to
-                                    modernise the transcription architecture, splitting recognition from session
-                                    management and delivering spoken-language features.</li>
-                                <li><strong>Accelerated release velocity and reduced risk</strong> — replaced a manual
-                                    multi-step release process with one-click automated deployments, moving release
-                                    cadence from monthly to weekly.</li>
-                                <li><strong>Synthetic monitoring and release gating</strong> — built a suite that
-                                    exercises the live service with real meeting recordings and transcriptions; this
-                                    continuous production validation blocked broken builds and eliminated manual
-                                    regression testing.</li>
-                                <li><strong>Kubernetes migration</strong> — migrated the stateful recording service off
-                                    classic Azure infrastructure onto Microsoft's internal Kubernetes platform across
-                                    four environments during the company-wide RDFE shutdown; carried the cutover into
-                                    government clouds without service interruption.</li>
-                                <li><strong>On-call and cross-boundary troubleshooting</strong> — root-caused
-                                    distributed failures across service boundaries, including hours-long recording
-                                    export hangs caused by a partner service misreporting unrecoverable errors as
-                                    retryable.</li>
+                                <li><strong>Service ownership through 30x growth</strong> — owned Teams recording and
+                                    transcription services from design to 24/7 on-call against a 99.9% availability
+                                    target while volume grew from ~300K to 10M+ recordings/month. Shipped same-day
+                                    hotfixes for government-cloud outages; wrote runbooks and postmortems and
+                                    onboarded engineers into the infra team.</li>
+                                <li><strong>$1.8M/year captions service migration</strong> — led the extraction of the
+                                    human-curated captions service (CART) from a monolith into a standalone
+                                    microservice with its own CI/CD, testing and scaling, and migrated its
+                                    infrastructure before a hard year-end deadline, saving ~$1.8M a year in compute.
+                                    Wrote the migration guide 3 other teams adopted; shipped CART to GA for commercial
+                                    and government customers.</li>
+                                <li><strong>Weekly releases, one click</strong> — cut the release cycle for the first
+                                    deployment rings from monthly to weekly. Built one-click deployment with traffic
+                                    switching and rollback, gated by an automated health check on availability,
+                                    reliability and exception count; consolidated four per-cloud build pipelines into
+                                    one.</li>
+                                <li><strong>Zero-downtime Kubernetes migration</strong> — moved the stateful recording
+                                    service onto Microsoft's internal Kubernetes platform across four environments,
+                                    including GCC High and DoD, with no service interruption.</li>
+                                <li><strong>Cross-service root-causing</strong> — traced multi-hour recording export
+                                    hangs to a partner service reporting unrecoverable errors as retryable, so exports
+                                    kept retrying instead of failing fast.</li>
+                                <li><strong>Async recording observability</strong> — built the end-to-end telemetry for
+                                    moving recording from real-time to asynchronous processing: dashboards and monitors
+                                    for assembly, delivery, capacity, error rates and reliability that served as the
+                                    go/no-go signal for production readiness and each rollout expansion. Integrated a
+                                    new internal media storage API replacing legacy blob storage (auth upgrades, retry
+                                    policies, event buffering, multi-region data residency).</li>
+                                <li><strong>Data residency for 170K+ customers</strong> — delivered in-region data
+                                    residency for Recorder, Transcription and Live Captions in 5 countries (Norway,
+                                    Germany, Switzerland, Singapore, Brazil). For EU Data Boundary compliance, moved
+                                    telemetry and logging event pipelines to dedicated clusters and fixed cross-region
+                                    data flows. Sovereign clouds: GCC, GCC High, DoD, Gallatin, AG.</li>
+                                <li><strong>Government-cloud test automation</strong> — built synthetic E2E monitoring
+                                    that runs real meetings through production every 15 minutes and blocks broken
+                                    builds; added 100+ automated E2E tests for government clouds that previously had
+                                    zero coverage, eliminating manual release testing.</li>
+                                <li><strong>Transcription architecture</strong> — led spoken-language support for
+                                    transcription and captions, and designed the separation of session management from
+                                    the transcription processor, improving maintainability and testability.</li>
                             </ul>
-                            <div class="key-achievement highlight-box">
-                                <div class="highlight-icon">
-                                    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-                                        <path
-                                            d="M12 2.5l2.9 6.34 6.85.82-5.12 4.72 1.42 6.87L12 17.77l-6.05 3.48 1.42-6.87-5.12-4.72 6.85-.82L12 2.5z">
-                                        </path>
-                                    </svg>
-                                </div>
-                                <div class="highlight-text">
-                                    <strong>Key Achievement:</strong> The release automation and production validation
-                                    work established the foundational infrastructure still used by the entire Teams
-                                    recording team and drove my promotion.
-                                </div>
-                            </div>
                         </div>
 
                         <!-- Nuvo -->
@@ -469,7 +469,7 @@
                                 style="font-size: 0.95rem; font-weight: 600; color: var(--text-primary); margin-bottom: 0.5rem; letter-spacing: 0.02em;">
                                 Languages & Frameworks</h4>
                             <div class="skill-tags">
-                                <span class="skill-tag">C# (.NET Core/Framework)</span>
+                                <span class="skill-tag">C# (.NET Core/Framework, Polly)</span>
                                 <span class="skill-tag">Java (Spring Boot, Kafka Streams)</span>
                                 <span class="skill-tag">Python</span>
                                 <span class="skill-tag">FastAPI</span>
@@ -500,7 +500,9 @@
                                 Cloud & DevOps</h4>
                             <div class="skill-tags">
                                 <span class="skill-tag">Azure</span>
-                                <span class="skill-tag">Kubernetes</span>
+                                <span class="skill-tag">Kubernetes (AKS)</span>
+                                <span class="skill-tag">ARM</span>
+                                <span class="skill-tag">Azure Front Door</span>
                                 <span class="skill-tag">Docker</span>
                                 <span class="skill-tag">Heroku</span>
                                 <span class="skill-tag">Azure DevOps</span>
@@ -511,10 +513,24 @@
                         <div>
                             <h4
                                 style="font-size: 0.95rem; font-weight: 600; color: var(--text-primary); margin-bottom: 0.5rem; letter-spacing: 0.02em;">
+                                Observability</h4>
+                            <div class="skill-tags">
+                                <span class="skill-tag">Kusto (KQL)</span>
+                                <span class="skill-tag">Aria</span>
+                                <span class="skill-tag">Geneva Metrics</span>
+                                <span class="skill-tag">anomaly detection</span>
+                                <span class="skill-tag">dashboards and monitors</span>
+                            </div>
+                        </div>
+
+                        <div>
+                            <h4
+                                style="font-size: 0.95rem; font-weight: 600; color: var(--text-primary); margin-bottom: 0.5rem; letter-spacing: 0.02em;">
                                 Data & Messaging</h4>
                             <div class="skill-tags">
                                 <span class="skill-tag">Kafka</span>
                                 <span class="skill-tag">Redis</span>
+                                <span class="skill-tag">Azure Service Bus</span>
                                 <span class="skill-tag">PostgreSQL</span>
                                 <span class="skill-tag">Cassandra</span>
                                 <span class="skill-tag">Supabase</span>
@@ -529,7 +545,7 @@
                             <div class="skill-tags">
                                 <span class="skill-tag">E2E and synthetic monitoring</span>
                                 <span class="skill-tag">integration</span>
-                                <span class="skill-tag">unit (MSTest, xUnit, pytest)</span>
+                                <span class="skill-tag">unit (MSTest, xUnit, NSubstitute, Shouldly, pytest)</span>
                             </div>
                         </div>
 
@@ -541,7 +557,7 @@
                                 <span class="skill-tag">GDPR</span>
                                 <span class="skill-tag">EU Data Boundary</span>
                                 <span class="skill-tag">US Government Cloud (GCC / GCC High / DoD)</span>
-                                <span class="skill-tag">data residency</span>
+                                <span class="skill-tag">data residency and tagging</span>
                             </div>
                         </div>
                     </div>
