@@ -130,7 +130,7 @@
                         years at Microsoft building and running a real-time media platform — Teams meeting
                         recording and transcription — that grew from ~300K to 10M+ recordings per month, on
                         tens of thousands of cores across commercial and government clouds. Owned services end
-                        to end: design, platform migration, production on-call.
+                        to end: design, Kubernetes migration, release automation and production on-call.
                         Now shipping production LLM systems: semantic search with hybrid retrieval and LLM
                         re-ranking. Core stack: C#/.NET, Java/Spring, Python/FastAPI, Kafka, Kubernetes, Azure.
                     </p>
@@ -335,24 +335,31 @@
                                     transcription pipeline from design to production on-call against a 99.9%
                                     availability SLA, across environments where compliance restricts telemetry and
                                     direct access to production.</li>
-                                <li><strong>Transcription architecture</strong> — drove a multi-phase initiative to
-                                    modernise the transcription architecture, splitting recognition from session
-                                    management and delivering spoken-language features.</li>
-                                <li><strong>Accelerated release velocity and reduced risk</strong> — replaced a manual
-                                    multi-step release process with one-click automated deployments, moving release
-                                    cadence from monthly to weekly.</li>
-                                <li><strong>Synthetic monitoring and release gating</strong> — built a suite that
-                                    exercises the live service with real meeting recordings and transcriptions; this
-                                    continuous production validation blocked broken builds and eliminated manual
-                                    regression testing.</li>
-                                <li><strong>Kubernetes migration</strong> — migrated the stateful recording service off
-                                    classic Azure infrastructure onto Microsoft's internal Kubernetes platform across
-                                    four environments during the company-wide RDFE shutdown; carried the cutover into
-                                    government clouds without service interruption.</li>
-                                <li><strong>On-call and cross-boundary troubleshooting</strong> — root-caused
-                                    distributed failures across service boundaries, including hours-long recording
-                                    export hangs caused by a partner service misreporting unrecoverable errors as
-                                    retryable.</li>
+                                <li><strong>Kubernetes migration</strong> — led the stateful recording service's move
+                                    off classic Azure onto Microsoft's internal Kubernetes platform during the RDFE
+                                    shutdown: end to end in the first production ring (capacity, pod identity,
+                                    deployment templates, pipelines), then the GCC High and DoD cutovers, without
+                                    service interruption.</li>
+                                <li><strong>Release automation</strong> — core contributor to the infra team's
+                                    multi-quarter initiative that moved releases from monthly to weekly; merged the
+                                    commercial, GCC, GCC High and DoD builds into one YAML pipeline and built an
+                                    automated health check that flags availability, reliability and exception
+                                    regressions after each deployment.</li>
+                                <li><strong>Synthetic monitoring and release gating</strong> — owned the end-to-end
+                                    suite that runs real meetings through the live services and checks output video and
+                                    transcripts against reference snapshots; it gated early deployment rings, blocking
+                                    broken builds before wider rollout and eliminating manual regression testing.</li>
+                                <li><strong>Cross-boundary troubleshooting</strong> — root-caused hours-long recording
+                                    export hangs (a partner media service misreporting fatal errors as retryable) and a
+                                    roster-update queue fault that blocked call handover in large meetings and could
+                                    drop parts of recordings.</li>
+                                <li><strong>Resilience and security</strong> — after an Azure Front Door outage, added
+                                    failover with priority routing and fallback endpoints; replaced pipeline personal
+                                    access tokens with managed identities and upgraded FFmpeg to 7.1 to close known
+                                    CVEs.</li>
+                                <li><strong>Transcription architecture</strong> — drove a multi-phase modernisation
+                                    separating speech-recognition multiplexing from session lifecycle, which simplified
+                                    retry logic, and shipped additional spoken languages for Teams transcription.</li>
                             </ul>
                             <div class="key-achievement highlight-box">
                                 <div class="highlight-icon">
@@ -363,9 +370,9 @@
                                     </svg>
                                 </div>
                                 <div class="highlight-text">
-                                    <strong>Key Achievement:</strong> The release automation and production validation
-                                    work established the foundational infrastructure still used by the entire Teams
-                                    recording team and drove my promotion.
+                                    <strong>Key Achievement:</strong> The YAML pipeline migration and production
+                                    validation suite became the foundation of the recording team's deployment
+                                    automation, still in use today.
                                 </div>
                             </div>
                         </div>
