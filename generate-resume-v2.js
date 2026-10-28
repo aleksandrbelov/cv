@@ -32,6 +32,10 @@ const VARIANTS = [
   { name: 'llm-inference', source: 'Oleksandr_Bielov_Resume_LLM_Inference_v2.md', title: 'Resume (LLM Inference)' },
   // Master copy with everything kept; tailored versions are cut down from it.
   { name: 'extended', source: 'Oleksandr_Bielov_Resume_Extended.md', title: 'Resume (Extended)' },
+  // Per-job cuts of the extended master; plain titles since recruiters see the PDF metadata.
+  { name: 'backend-retail', source: 'Oleksandr_Bielov_Resume_Backend_Retail.md', title: 'Resume' },
+  { name: 'ml-platform', source: 'Oleksandr_Bielov_Resume_ML_Platform.md', title: 'Resume' },
+  { name: 'backend-product', source: 'Oleksandr_Bielov_Resume_Backend_Product.md', title: 'Resume' },
 ];
 
 // ── DOCX constants ──────────────────────────────────────────────────────────
