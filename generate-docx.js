@@ -398,4 +398,4 @@ if (require.main === module) {
     });
 }
 
-module.exports = { generateDocx, parseResume };
+module.exports = { generateDocx, parseResume, buildDocument };

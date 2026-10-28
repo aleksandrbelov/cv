@@ -7,6 +7,7 @@
     "check": "node check-content.js",
     "pdf": "node generate-pdf.js",
     "docx": "node generate-docx.js",
+    "senior": "node generate-senior-swe-resume.js",
     "build": "npm run check && npm run pdf && npm run docx"
   },
   "devDependencies": {
