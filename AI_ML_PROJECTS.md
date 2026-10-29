@@ -15,7 +15,7 @@
 ### **AI-Powered Professional Matchmaking Platform**
 *Slack-native semantic search and LLM enrichment pipeline that delivers ranked professional matches on demand, directly inside a team's workspace*  
 **Tech Stack:** Python 3.11, OpenAI API (o3-mini, gpt-4.1, text-embedding-3-large), Pinecone, Slack Bolt, Supabase, httpx, Docker, Heroku
-* **Slack-native semantic search over a professional network** — users describe the connection they need in plain language; a reasoning model rewrites the request into a retrieval-optimised query, normalising non-English input to English before embedding. Profiles are chunked at sentence boundaries with per-chunk vectors and server-side metadata filters.
+* **Slack-native semantic search over a professional network** — users describe the connection they need in plain language; a reasoning model rewrites the request into a retrieval-optimised query, normalising non-English input to English before embedding. Each profile is indexed as one vector, with server-side metadata filters.
 * **On-demand LinkedIn enrichment from Slack** — an LLM distils contacts' recent posts and profile text into a matching-oriented summary, fanned out to Supabase, the CRM and the vector index; a freshness window skips recently-enriched contacts to cut redundant API spend.
 * **Built** a flexible LLM abstraction layer supporting multiple OpenAI APIs, with 90-day Supabase result caching and user-controlled cache refresh — reducing redundant API calls and keeping response times fast for repeat queries.
 * **Designed** a fully async Python stack (Slack Bolt, httpx, asyncio) ensuring zero blocked Slack ACKs across all concurrent interactions.

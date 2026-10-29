@@ -30,7 +30,7 @@ Jun 2020 – Jul 2025
 Jul 2025 – Present · London, UK (Remote)
 *Two client projects: Slack-native investor-startup matching, and a candidate search system (MatchCV)*
 **Tech Stack:** Python, FastAPI, OpenAI API, Pinecone, Supabase, Slack Bolt, Docker, Heroku
-* Built two retrieval systems end to end and ran them in production — ingestion, sentence-boundary chunking, indexing, query serving and deployment as containers, driven from CLI and Slack entry points.
+* Built two retrieval systems end to end and ran them in production — ingestion, indexing, query serving and deployment as containers, driven from CLI and Slack entry points.
 * Designed a provider-agnostic service layer for model calls: per-family request construction behind a single interface, client-side throttling against a tokens-per-minute budget, batched concurrency and exponential backoff on rate limits. Swapping providers, including self-hosted OpenAI-compatible endpoints, is a config change.
 * Implemented hybrid retrieval — dense embeddings and BM25 sparse vectors in a single query with weighted scoring — plus a second-stage re-ranking pass that falls back to vector scores when the re-ranker fails or returns invalid output.
 ---

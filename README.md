@@ -26,7 +26,7 @@ Jul 2025 – Present · London, UK (Remote)
 ---
 *AI-Powered Professional Matchmaking Platform*
 **Tech Stack:** Python, OpenAI API, Pinecone, Slack Bolt, Supabase, Docker, Heroku
-* **Slack-native semantic search over a professional network** — users describe the connection they need in plain language; a reasoning model rewrites the request into a retrieval-optimised query, normalising non-English input to English before embedding. Profiles are chunked at sentence boundaries with per-chunk vectors and server-side metadata filters.
+* **Slack-native semantic search over a professional network** — users describe the connection they need in plain language; a reasoning model rewrites the request into a retrieval-optimised query, normalising non-English input to English before embedding. Each profile is indexed as one vector, with server-side metadata filters.
 * **On-demand LinkedIn enrichment from Slack** — an LLM distils contacts' recent posts and profile text into a matching-oriented summary, fanned out to Supabase, the CRM and the vector index; a freshness window skips recently-enriched contacts to cut redundant API spend.
 📄 [Full technical detail → AI_ML_PROJECTS.md](AI_ML_PROJECTS.md)
 ---

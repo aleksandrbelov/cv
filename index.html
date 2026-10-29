@@ -197,9 +197,8 @@
                                         <li><strong>Slack-native semantic search over a professional network</strong> —
                                             users describe the connection they need in plain language; a reasoning model
                                             rewrites the request into a retrieval-optimised query, normalising
-                                            non-English input to English before embedding. Profiles are chunked at
-                                            sentence boundaries with per-chunk vectors and server-side metadata
-                                            filters.</li>
+                                            non-English input to English before embedding. Each profile is indexed as one
+                                            vector, with server-side metadata filters.</li>
                                         <li><strong>On-demand LinkedIn enrichment from Slack</strong> — an LLM distils
                                             contacts' recent posts and profile text into a matching-oriented summary,
                                             fanned out to Supabase, the CRM and the vector index; a freshness window
@@ -291,8 +290,8 @@
                                                         network</strong> — users describe the connection they need in
                                                     plain language; a reasoning model rewrites the request into a
                                                     retrieval-optimised query, normalising non-English input to English
-                                                    before embedding. Profiles are chunked at sentence boundaries with
-                                                    per-chunk vectors and server-side metadata filters.</li>
+                                                    before embedding. Each profile is indexed as one
+                                                    vector, with server-side metadata filters.</li>
                                                 <li><strong>On-demand LinkedIn enrichment from Slack</strong> — an LLM
                                                     distils contacts' recent posts and profile text into a
                                                     matching-oriented summary, fanned out to Supabase, the CRM and the
